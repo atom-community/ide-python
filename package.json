@@ -14,15 +14,13 @@
   "repository": "https://github.com/lgeiger/ide-python",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.21.0 <2.0.0"
   },
   "dependencies": {
     "atom-languageclient": "^0.6.1",
     "shell-env": "^0.3.0"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
