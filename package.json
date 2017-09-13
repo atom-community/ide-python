@@ -12,9 +12,15 @@
   "dependencies": {
     "atom-languageclient": "^0.6.1"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
+  "configSchema": {
+    "pylsPath": {
+      "title": "Python Language Server Path",
+      "type": "string",
+      "default": "pyls",
+      "description": "Absolute path to ```pyls``` executable."
+    }
+  },
   "consumedServices": {
     "linter-indie": {
       "versions": {
