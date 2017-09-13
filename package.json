@@ -3,7 +3,14 @@
   "main": "./lib/main",
   "version": "0.1.0",
   "description": "Python language support for Atom-IDE",
-  "keywords": [],
+  "keywords": [
+    "atom-ide",
+    "ide",
+    "python",
+    "languageserver",
+    "language-server-protocol",
+    "language-client"
+  ],
   "repository": "https://github.com/lgeiger/ide-python",
   "license": "MIT",
   "engines": {
@@ -12,9 +19,7 @@
   "dependencies": {
     "atom-languageclient": "^0.6.1"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
