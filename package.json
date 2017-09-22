@@ -24,9 +24,155 @@
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
+      "order": 1,
       "type": "string",
       "default": "pyls",
       "description": "Absolute path to ```pyls``` executable."
+    },
+    "pylsPlugins": {
+      "title": "Python Language Server Plugins",
+      "type": "object",
+      "properties": {
+        "jedi_completion": {
+          "title": "Jedi Completion",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi Completion."
+            }
+          }
+        },
+        "jedi_definition": {
+          "title": "Jedi Definition",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi Definition."
+            }
+          }
+        },
+        "jedi_hover": {
+          "title": "Jedi Hover",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi Hover."
+            }
+          }
+        },
+        "jedi_references": {
+          "title": "Jedi References",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi References."
+            }
+          }
+        },
+        "jedi_signature_help": {
+          "title": "Jedi Signature Help",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi Signature Help."
+            }
+          }
+        },
+        "jedi_symbols": {
+          "title": "Jedi Symbols",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Jedi Symbols."
+            }
+          }
+        },
+        "mccabe": {
+          "title": "McCabe",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable McCabe."
+            },
+            "threshold": {
+              "title": "Threshold",
+              "type": "number",
+              "default": 15,
+              "description":
+                "The minimum threshold that triggers warnings about cyclomatic complexity."
+            }
+          }
+        },
+        "pycodestyle": {
+          "title": "PyCodeStyle",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable PyCodeStyle."
+            }
+          }
+        },
+        "pydocstyle": {
+          "title": "PyDocStyle",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": false,
+              "description": "Enable or disable PyDocStyle."
+            }
+          }
+        },
+        "pyflakes": {
+          "title": "PyFlakes",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable PyFlakes."
+            }
+          }
+        },
+        "yapf": {
+          "title": "Yapf",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable Yapf."
+            }
+          }
+        }
+      }
     }
   },
   "consumedServices": {
