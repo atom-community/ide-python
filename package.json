@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "atom-ide",
@@ -20,7 +20,9 @@
     "atom-languageclient": "^0.6.4",
     "shell-env": "^0.3.0"
   },
-  "enhancedScopes": ["source.python"],
+  "enhancedScopes": [
+    "source.python"
+  ],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -119,8 +121,7 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description":
-                "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
