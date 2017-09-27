@@ -20,9 +20,7 @@
     "atom-languageclient": "^0.6.4",
     "shell-env": "^0.3.0"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -102,8 +100,16 @@
             "enabled": {
               "title": "Enabled",
               "type": "boolean",
+              "order": 1,
               "default": true,
               "description": "Enable or disable Jedi Symbols."
+            },
+            "all_scopes": {
+              "title": "All Scopes",
+              "type": "boolean",
+              "default": false,
+              "description":
+                "If enabled lists the names of all scopes instead of only the module namespace. Requires pyls 0.7.0+"
             }
           }
         },
@@ -121,7 +127,8 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description":
+                "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
