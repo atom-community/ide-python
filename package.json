@@ -17,7 +17,7 @@
     "atom": ">=1.21.0 <2.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.4"
+    "atom-languageclient": "^0.7.1"
   },
   "enhancedScopes": [
     "source.python"
