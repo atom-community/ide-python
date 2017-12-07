@@ -1,5 +1,7 @@
 # IDE-python package
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
+
 Python language support for Atom-IDE, powered by the [Python language server](https://github.com/palantir/python-language-server).
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
