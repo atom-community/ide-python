@@ -4,12 +4,20 @@
   "version": "0.3.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
-    "atom-ide",
     "ide",
     "python",
+    "atom-ide",
     "languageserver",
     "language-server-protocol",
-    "language-client"
+    "language-client",
+    "autocomplete",
+    "jedi",
+    "rope",
+    "pyflakes",
+    "pycodestyle",
+    "pydocstyle",
+    "yapf",
+    "mccabe"
   ],
   "repository": "https://github.com/lgeiger/ide-python",
   "license": "MIT",
