@@ -2,30 +2,29 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for Atom-IDE, powered by the [Python language server](https://github.com/palantir/python-language-server).
+Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Python language server](https://github.com/palantir/python-language-server).
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
-## Early access
-This package is currently an early access release.  You should also install the [atom-ide-ui](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
+## Requirements
+[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
 
-## Features
-
-* Auto completion
-* Code format
-* Diagnostics (errors & warnings)
-* Document outline
-* Find references
-* Hover
+## Feature Providers
+* [Jedi](https://github.com/davidhalter/jedi) for Completions, Definitions, Hover, References, Signature Help, and Symbols
+* [Rope](https://github.com/python-rope/rope) for Completions and renaming
+* [Pyflakes](https://github.com/PyCQA/pyflakes) linter to detect various errors
+* [McCabe](https://github.com/PyCQA/mccabe) linter for complexity checking
+* [pycodestyle](https://github.com/PyCQA/pycodestyle) linter for style checking
+* [pydocstyle](https://github.com/PyCQA/pydocstyle) linter for docstring style checking
+* [YAPF](https://github.com/google/yapf) for code formatting
 
 ## Installation
-
 Install the language server with
 ```bash
 pip install python-language-server
 ```
 
-Verify that everything is correctly installed by running `pyls --help` from the command line.
+Verify that everything is correctly installed and `pyls` is on your `PATH` by running `pyls --help` from the command line.
 It should return
 ```bash
 usage: pyls [-h] [--tcp] [--host HOST] [--port PORT]
