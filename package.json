@@ -116,7 +116,7 @@
             "all_scopes": {
               "title": "All Scopes",
               "type": "boolean",
-              "default": false,
+              "default": true,
               "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires pyls 0.7.0+"
             }
           }
