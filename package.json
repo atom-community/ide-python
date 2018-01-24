@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -27,7 +27,9 @@
   "dependencies": {
     "atom-languageclient": "^0.8.2"
   },
-  "enhancedScopes": ["source.python"],
+  "enhancedScopes": [
+    "source.python"
+  ],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -42,12 +44,16 @@
       "properties": {
         "configurationSources": {
           "type": "array",
-          "default": ["pycodestyle"],
-          "description":
-            "List of configuration sources to use. Requires `pyls` 0.12.1+",
+          "default": [
+            "pycodestyle"
+          ],
+          "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
           "items": {
             "type": "string",
-            "enum": ["pycodestyle", "pyflakes"]
+            "enum": [
+              "pycodestyle",
+              "pyflakes"
+            ]
           }
         },
         "jedi_completion": {
@@ -125,8 +131,7 @@
               "title": "All Scopes",
               "type": "boolean",
               "default": true,
-              "description":
-                "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
+              "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
             }
           }
         },
@@ -144,8 +149,7 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description":
-                "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
@@ -162,14 +166,12 @@
             "hangClosing": {
               "type": "boolean",
               "default": false,
-              "description":
-                "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
+              "description": "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
             },
             "maxLineLength": {
               "type": "number",
               "default": 79,
-              "description":
-                "Set maximum allowed line length. Requires `pyls` 0.12.1+"
+              "description": "Set maximum allowed line length. Requires `pyls` 0.12.1+"
             }
           }
         },
@@ -204,8 +206,7 @@
             "enabled": {
               "type": "boolean",
               "default": false,
-              "description":
-                "Enable or disable the plugin. Requires `pyls` 0.12.1+"
+              "description": "Enable or disable the plugin. Requires `pyls` 0.12.1+"
             }
           }
         },
