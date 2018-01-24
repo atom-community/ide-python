@@ -27,9 +27,7 @@
   "dependencies": {
     "atom-languageclient": "^0.8.2"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -44,16 +42,11 @@
       "properties": {
         "configurationSources": {
           "type": "array",
-          "default": [
-            "pycodestyle"
-          ],
+          "default": ["pycodestyle"],
           "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
           "items": {
             "type": "string",
-            "enum": [
-              "pycodestyle",
-              "pyflakes"
-            ]
+            "enum": ["pycodestyle", "pyflakes"]
           }
         },
         "jedi_completion": {
@@ -131,7 +124,8 @@
               "title": "All Scopes",
               "type": "boolean",
               "default": true,
-              "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
+              "description":
+                "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
             }
           }
         },
@@ -149,7 +143,8 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description":
+                "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
@@ -166,7 +161,8 @@
             "hangClosing": {
               "type": "boolean",
               "default": false,
-              "description": "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
+              "description":
+                "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
             },
             "maxLineLength": {
               "type": "number",
@@ -226,6 +222,11 @@
     }
   },
   "consumedServices": {
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    },
     "linter-indie": {
       "versions": {
         "2.0.0": "consumeLinterV2"
@@ -251,11 +252,6 @@
     "code-format.range": {
       "versions": {
         "0.1.0": "provideCodeFormat"
-      }
-    },
-    "code-highlight": {
-      "versions": {
-        "0.1.0": "provideCodeHighlight"
       }
     },
     "definitions": {
