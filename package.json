@@ -38,24 +38,24 @@
       "default": "pyls",
       "description": "Absolute path to `pyls` executable."
     },
+    "pylsConfigurationSources": {
+      "type": "array",
+      "default": [
+        "pycodestyle"
+      ],
+      "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pycodestyle",
+          "flake8"
+        ]
+      }
+    },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
       "type": "object",
       "properties": {
-        "configurationSources": {
-          "type": "array",
-          "default": [
-            "pycodestyle"
-          ],
-          "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
-          "items": {
-            "type": "string",
-            "enum": [
-              "pycodestyle",
-              "flake8"
-            ]
-          }
-        },
         "jedi_completion": {
           "title": "Jedi Completion",
           "type": "object",
