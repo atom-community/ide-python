@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -169,8 +169,7 @@
               "items": {
                 "type": "string"
               },
-              "description":
-                "Select errors and warnings. Requires `pyls` 0.14+"
+              "description": "Select errors and warnings. Requires `pyls` 0.14+"
             },
             "ignore": {
               "type": "array",
@@ -186,8 +185,7 @@
               "items": {
                 "type": "string"
               },
-              "description":
-                "Ignore errors and warnings. Requires `pyls` 0.14+"
+              "description": "Ignore errors and warnings. Requires `pyls` 0.14+"
             },
             "hangClosing": {
               "type": "boolean",
