@@ -22,7 +22,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ## Installation
 
-Install the language server with
+Install the language server (we recommend version `0.14.0` or newer) with
 
 ```bash
 pip install python-language-server
@@ -38,6 +38,17 @@ usage: pyls [-h] [--tcp] [--host HOST] [--port PORT]
 Python Language Server
 ...
 ```
+
+Depending on your Python setup `pyls` may be installed in a non default folder. In this case either add the directory to your `PATH` or edit the "Python Language Server Path" setting of `ide-python` to point to the `pyls` executable.
+
+## Configuration
+
+Configuration is loaded from zero or more configuration sources.
+
+* `pycodestyle` (default): discovered in `~/.config/pycodestyle`, `setup.cfg`, `tox.ini` and `pycodestyle.cfg`
+* `flake8`: discovered in `~/.config/flake8`, `setup.cfg`, `tox.ini` and `flake8.cfg`
+
+Overall configuration is computed first from user configuration (in home directory), overridden by configuration in the `ide-python` settings, and then overridden by configuration discovered in the current project.
 
 ## Contributing
 
