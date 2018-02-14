@@ -163,6 +163,32 @@
               "default": true,
               "description": "Enable or disable PyCodeStyle."
             },
+            "select": {
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description":
+                "Select errors and warnings. Requires `pyls` 0.14+"
+            },
+            "ignore": {
+              "type": "array",
+              "default": [
+                "E121",
+                "E123",
+                "E126",
+                "E226",
+                "E24",
+                "E704",
+                "W503"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description":
+                "Ignore errors and warnings. Requires `pyls` 0.14+"
+            },
             "hangClosing": {
               "type": "boolean",
               "default": false,
