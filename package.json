@@ -7,17 +7,18 @@
     "ide",
     "python",
     "atom-ide",
-    "languageserver",
-    "language-server-protocol",
-    "language-client",
     "autocomplete",
     "jedi",
     "rope",
     "pyflakes",
     "pycodestyle",
     "pydocstyle",
+    "autopep8",
     "yapf",
-    "mccabe"
+    "mccabe",
+    "languageserver",
+    "language-server-protocol",
+    "language-client"
   ],
   "repository": "https://github.com/lgeiger/ide-python",
   "license": "MIT",
@@ -27,9 +28,7 @@
   "dependencies": {
     "atom-languageclient": "^0.9.1"
   },
-  "enhancedScopes": [
-    "source.python"
-  ],
+  "enhancedScopes": ["source.python"],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -39,18 +38,21 @@
       "description": "Absolute path to `pyls` executable."
     },
     "pylsConfigurationSources": {
+      "order": 2,
       "type": "array",
-      "default": [
-        "pycodestyle"
-      ],
+      "default": ["pycodestyle", "flake8"],
       "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
       "items": {
         "type": "string",
-        "enum": [
-          "pycodestyle",
-          "flake8"
-        ]
+        "enum": ["pycodestyle", "flake8"]
       }
+    },
+    "ropeFolder": {
+      "order": 3,
+      "type": ["string", null],
+      "default": ".ropeproject",
+      "description":
+        "The name of the folder in which rope stores project configurations and data. If empty, no such a folder is used at all. Requires `pyls` 0.17+"
     },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
@@ -131,7 +133,8 @@
               "title": "All Scopes",
               "type": "boolean",
               "default": true,
-              "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7.0+"
+              "description":
+                "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7+"
             }
           }
         },
@@ -149,7 +152,8 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description":
+                "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
@@ -158,41 +162,43 @@
           "type": "object",
           "properties": {
             "enabled": {
+              "order": 1,
               "title": "Enabled",
               "type": "boolean",
               "default": true,
               "description": "Enable or disable PyCodeStyle."
             },
             "select": {
+              "order": 2,
+              "title": "Select",
               "type": "array",
-              "default": [],
               "items": {
                 "type": "string"
               },
+              "default": [],
               "description": "Select errors and warnings. Requires `pyls` 0.14+"
             },
             "ignore": {
+              "order": 3,
+              "title": "Ignore",
               "type": "array",
-              "default": [
-                "E121",
-                "E123",
-                "E126",
-                "E226",
-                "E24",
-                "E704",
-                "W503"
-              ],
+              "default": ["E121", "E123", "E126", "E226", "E24", "E704", "W503"],
               "items": {
                 "type": "string"
               },
               "description": "Ignore errors and warnings. Requires `pyls` 0.14+"
             },
             "hangClosing": {
+              "order": 4,
+              "title": "Hang Closing",
               "type": "boolean",
               "default": false,
-              "description": "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
+              "description":
+                "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
             },
             "maxLineLength": {
+              "order": 5,
+              "title": "Max Line Length",
               "type": "number",
               "default": 79,
               "description": "Set maximum allowed line length. Requires `pyls` 0.12.1+"
@@ -204,10 +210,78 @@
           "type": "object",
           "properties": {
             "enabled": {
+              "order": 1,
               "title": "Enabled",
               "type": "boolean",
               "default": false,
               "description": "Enable or disable PyDocStyle."
+            },
+            "match": {
+              "order": 2,
+              "title": "Match",
+              "type": "string",
+              "default": "(?!test_).*\\.py",
+              "description":
+                "Check only files that exactly match the given regular expression; default is to match files that don't start with 'test_' but end with '.py'. Requires `pyls` 0.17+"
+            },
+            "matchDir": {
+              "order": 3,
+              "title": "Match Dir",
+              "type": "string",
+              "default": "[^\\.].*",
+              "description":
+                "Search only dirs that exactly match the given regular expression; default is to match dirs which do not begin with a dot. Requires `pyls` 0.17+"
+            },
+            "select": {
+              "order": 4,
+              "title": "Select",
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description": "Select errors and warnings Requires `pyls` 0.17+"
+            },
+            "ignore": {
+              "order": 5,
+              "title": "Ignore",
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description": "Ignore errors and warnings Requires `pyls` 0.17+"
+            },
+            "convention": {
+              "order": 6,
+              "title": "Convention",
+              "type": "string",
+              "enum": ["pep257", "numpy", ""],
+              "default": "",
+              "description":
+                "Choose the basic list of checked errors by specifying an existing convention. Requires `pyls` 0.17+"
+            },
+            "addSelect": {
+              "order": 7,
+              "title": "Add Select",
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description":
+                "Select errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
+            },
+            "addIgnore": {
+              "order": 8,
+              "title": "Add Ignore",
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description":
+                "Ignore errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
             }
           }
         },
@@ -228,6 +302,7 @@
           "type": "object",
           "properties": {
             "enabled": {
+              "title": "Enabled",
               "type": "boolean",
               "default": false,
               "description": "Enable or disable the plugin. Requires `pyls` 0.12.1+"
@@ -241,8 +316,22 @@
             "enabled": {
               "title": "Enabled",
               "type": "boolean",
+              "default": false,
+              "description":
+                "Enable or disable Yapf. If both Yapf and autopep8 are enabled the latter is prefered."
+            }
+          }
+        },
+        "autopep8": {
+          "title": "autopep8",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
               "default": true,
-              "description": "Enable or disable Yapf."
+              "description":
+                "Enable or disable autopep8. Formats code according to PyCodeStyle config. Requires `pyls` 0.17+"
             }
           }
         }
