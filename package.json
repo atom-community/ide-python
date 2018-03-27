@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -28,7 +28,9 @@
   "dependencies": {
     "atom-languageclient": "^0.9.1"
   },
-  "enhancedScopes": ["source.python"],
+  "enhancedScopes": [
+    "source.python"
+  ],
   "configSchema": {
     "pylsPath": {
       "title": "Python Language Server Path",
@@ -40,19 +42,27 @@
     "pylsConfigurationSources": {
       "order": 2,
       "type": "array",
-      "default": ["pycodestyle", "flake8"],
+      "default": [
+        "pycodestyle",
+        "flake8"
+      ],
       "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
       "items": {
         "type": "string",
-        "enum": ["pycodestyle", "flake8"]
+        "enum": [
+          "pycodestyle",
+          "flake8"
+        ]
       }
     },
     "ropeFolder": {
       "order": 3,
-      "type": ["string", null],
+      "type": [
+        "string",
+        null
+      ],
       "default": ".ropeproject",
-      "description":
-        "The name of the folder in which rope stores project configurations and data. If empty, no such a folder is used at all. Requires `pyls` 0.17+"
+      "description": "The name of the folder in which rope stores project configurations and data. If empty, no such a folder is used at all. Requires `pyls` 0.17+"
     },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
@@ -133,8 +143,7 @@
               "title": "All Scopes",
               "type": "boolean",
               "default": true,
-              "description":
-                "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7+"
+              "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7+"
             }
           }
         },
@@ -152,8 +161,7 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description":
-                "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
             }
           }
         },
@@ -182,7 +190,15 @@
               "order": 3,
               "title": "Ignore",
               "type": "array",
-              "default": ["E121", "E123", "E126", "E226", "E24", "E704", "W503"],
+              "default": [
+                "E121",
+                "E123",
+                "E126",
+                "E226",
+                "E24",
+                "E704",
+                "W503"
+              ],
               "items": {
                 "type": "string"
               },
@@ -193,8 +209,7 @@
               "title": "Hang Closing",
               "type": "boolean",
               "default": false,
-              "description":
-                "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
+              "description": "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
             },
             "maxLineLength": {
               "order": 5,
@@ -221,16 +236,14 @@
               "title": "Match",
               "type": "string",
               "default": "(?!test_).*\\.py",
-              "description":
-                "Check only files that exactly match the given regular expression; default is to match files that don't start with 'test_' but end with '.py'. Requires `pyls` 0.17+"
+              "description": "Check only files that exactly match the given regular expression; default is to match files that don't start with 'test_' but end with '.py'. Requires `pyls` 0.17+"
             },
             "matchDir": {
               "order": 3,
               "title": "Match Dir",
               "type": "string",
               "default": "[^\\.].*",
-              "description":
-                "Search only dirs that exactly match the given regular expression; default is to match dirs which do not begin with a dot. Requires `pyls` 0.17+"
+              "description": "Search only dirs that exactly match the given regular expression; default is to match dirs which do not begin with a dot. Requires `pyls` 0.17+"
             },
             "select": {
               "order": 4,
@@ -256,10 +269,13 @@
               "order": 6,
               "title": "Convention",
               "type": "string",
-              "enum": ["pep257", "numpy", ""],
+              "enum": [
+                "pep257",
+                "numpy",
+                ""
+              ],
               "default": "",
-              "description":
-                "Choose the basic list of checked errors by specifying an existing convention. Requires `pyls` 0.17+"
+              "description": "Choose the basic list of checked errors by specifying an existing convention. Requires `pyls` 0.17+"
             },
             "addSelect": {
               "order": 7,
@@ -269,8 +285,7 @@
               "items": {
                 "type": "string"
               },
-              "description":
-                "Select errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
+              "description": "Select errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
             },
             "addIgnore": {
               "order": 8,
@@ -280,8 +295,7 @@
               "items": {
                 "type": "string"
               },
-              "description":
-                "Ignore errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
+              "description": "Ignore errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
             }
           }
         },
@@ -317,8 +331,7 @@
               "title": "Enabled",
               "type": "boolean",
               "default": false,
-              "description":
-                "Enable or disable Yapf. If both Yapf and autopep8 are enabled the latter is prefered."
+              "description": "Enable or disable Yapf. If both Yapf and autopep8 are enabled the latter is prefered."
             }
           }
         },
@@ -330,8 +343,7 @@
               "title": "Enabled",
               "type": "boolean",
               "default": true,
-              "description":
-                "Enable or disable autopep8. Formats code according to PyCodeStyle config. Requires `pyls` 0.17+"
+              "description": "Enable or disable autopep8. Formats code according to PyCodeStyle config. Requires `pyls` 0.17+"
             }
           }
         }
