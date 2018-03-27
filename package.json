@@ -57,12 +57,9 @@
     },
     "ropeFolder": {
       "order": 3,
-      "type": [
-        "string",
-        null
-      ],
+      "type": "string",
       "default": ".ropeproject",
-      "description": "The name of the folder in which rope stores project configurations and data. If empty, no such a folder is used at all. Requires `pyls` 0.17+"
+      "description": "The name of the folder in which rope stores project configurations and data. Pass `null` for not using such a folder at all. Requires `pyls` 0.17+"
     },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
