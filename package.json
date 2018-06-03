@@ -32,12 +32,12 @@
     "source.python"
   ],
   "configSchema": {
-    "pylsPath": {
-      "title": "Python Language Server Path",
+    "python": {
+      "title": "Python Executable",
       "order": 1,
       "type": "string",
-      "default": "pyls",
-      "description": "Absolute path to `pyls` executable."
+      "default": "python",
+      "description": "The path to `python` executable used by the language server. Make sure to install `pyls` for this version of Python."
     },
     "pylsConfigurationSources": {
       "order": 2,
