@@ -37,7 +37,7 @@
       "order": 1,
       "type": "string",
       "default": "python",
-      "description": "The path to `python` executable used by the language server. Make sure to install `pyls` for this version of Python."
+      "description": "The path to `python` executable used by the language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server."
     },
     "pylsConfigurationSources": {
       "order": 2,
