@@ -375,6 +375,11 @@
         "2.0.0": "provideAutocomplete"
       }
     },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
     "code-format.range": {
       "versions": {
         "0.1.0": "provideCodeFormat"
