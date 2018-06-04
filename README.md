@@ -8,7 +8,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ## Requirements
 
-[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.18+`](https://github.com/palantir/python-language-server) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
+[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.19+`](https://github.com/palantir/python-language-server) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
 
 ## Feature Providers
 
@@ -25,7 +25,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ### Language Server
 
-Install the language server with:
+Install the language server (0.19.0 or newer) with:
 
 ```bash
 pip install 'python-language-server[all]'
