@@ -55,15 +55,31 @@
         ]
       }
     },
-    "ropeFolder": {
-      "order": 3,
-      "type": "string",
-      "default": ".ropeproject",
-      "description": "The name of the folder in which rope stores project configurations and data. Pass `null` for not using such a folder at all."
+    "rope": {
+      "title": "Rope",
+      "type": "object",
+      "properties": {
+        "ropeFolder": {
+          "title": "Rope Folder",
+          "description": "The name of the folder in which rope stores project configurations and data. Pass `null` for not using such a folder at all.",
+          "type": "string",
+          "default": ".ropeproject"
+        },
+        "extensionModules": {
+          "title": "Extension Modules",
+          "description": "Builtin and c-extension modules that are allowed to be imported and inspected by rope.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": ["OpenGL", "PIL", "array", "audioop", "binascii", "cPickle", "cStringIO", "cmath", "collections", "datetime", "errno", "exceptions", "gc", "imageop", "imp", "itertools", "marshal", "math", "matplotlib", "mmap", "mpmath", "msvcrt", "networkx", "nose", "nt", "numpy", "operator", "os", "os.path", "pandas", "parser", "rgbimg", "scipy", "signal", "skimage", "sklearn", "statsmodels", "strop", "sympy", "sys", "thread", "time", "wx", "xxsubtype", "zipimport", "zlib"]
+        }
+      }
     },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
       "type": "object",
+      "order": 3,
       "properties": {
         "jedi_completion": {
           "title": "Jedi Completion",
@@ -158,7 +174,29 @@
               "title": "Threshold",
               "type": "number",
               "default": 15,
-              "description": "The minimum threshold that triggers warnings about cyclomatic complexity."
+              "description":
+                "The minimum threshold that triggers warnings about cyclomatic complexity."
+            }
+          }
+        },
+        "preload": {
+          "title": "Preload",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": true,
+              "description": "Enable or disable the module preloading."
+            },
+            "modules": {
+              "title": "Modules",
+              "description": "List of modules to import on startup",
+              "type": "array",
+              "default": ["OpenGL", "PIL", "array", "audioop", "binascii", "cPickle", "cStringIO", "cmath", "collections", "datetime", "errno", "exceptions", "gc", "imageop", "imp", "itertools", "marshal", "math", "matplotlib", "mmap", "mpmath", "msvcrt", "networkx", "nose", "nt", "numpy", "operator", "os", "os.path", "pandas", "parser", "rgbimg", "scipy", "signal", "skimage", "sklearn", "statsmodels", "strop", "sympy", "sys", "thread", "time", "wx", "xxsubtype", "zipimport", "zlib"],
+              "items": {
+                "type": "string"
+              }
             }
           }
         },
