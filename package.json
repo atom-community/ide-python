@@ -32,12 +32,12 @@
     "source.python"
   ],
   "configSchema": {
-    "pylsPath": {
-      "title": "Python Language Server Path",
+    "python": {
+      "title": "Python Executable",
       "order": 1,
       "type": "string",
-      "default": "pyls",
-      "description": "Absolute path to `pyls` executable."
+      "default": "python",
+      "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server."
     },
     "pylsConfigurationSources": {
       "order": 2,
@@ -46,7 +46,7 @@
         "pycodestyle",
         "flake8"
       ],
-      "description": "List of configuration sources to use. Requires `pyls` 0.12.1+",
+      "description": "List of configuration sources to use.",
       "items": {
         "type": "string",
         "enum": [
@@ -59,7 +59,7 @@
       "order": 3,
       "type": "string",
       "default": ".ropeproject",
-      "description": "The name of the folder in which rope stores project configurations and data. Pass `null` for not using such a folder at all. Requires `pyls` 0.17+"
+      "description": "The name of the folder in which rope stores project configurations and data. Pass `null` for not using such a folder at all."
     },
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
@@ -140,7 +140,7 @@
               "title": "All Scopes",
               "type": "boolean",
               "default": true,
-              "description": "If enabled lists the names of all scopes instead of only the module namespace. Requires `pyls` 0.7+"
+              "description": "If enabled lists the names of all scopes instead of only the module namespace."
             }
           }
         },
@@ -181,7 +181,7 @@
                 "type": "string"
               },
               "default": [],
-              "description": "Select errors and warnings. Requires `pyls` 0.14+"
+              "description": "Select errors and warnings."
             },
             "ignore": {
               "order": 3,
@@ -199,21 +199,21 @@
               "items": {
                 "type": "string"
               },
-              "description": "Ignore errors and warnings. Requires `pyls` 0.14+"
+              "description": "Ignore errors and warnings."
             },
             "hangClosing": {
               "order": 4,
               "title": "Hang Closing",
               "type": "boolean",
               "default": false,
-              "description": "Hang closing bracket instead of matching indentation of opening bracket's line. Requires `pyls` 0.12.1+"
+              "description": "Hang closing bracket instead of matching indentation of opening bracket's line."
             },
             "maxLineLength": {
               "order": 5,
               "title": "Max Line Length",
               "type": "number",
               "default": 79,
-              "description": "Set maximum allowed line length. Requires `pyls` 0.12.1+"
+              "description": "Set maximum allowed line length."
             }
           }
         },
@@ -233,14 +233,14 @@
               "title": "Match",
               "type": "string",
               "default": "(?!test_).*\\.py",
-              "description": "Check only files that exactly match the given regular expression; default is to match files that don't start with 'test_' but end with '.py'. Requires `pyls` 0.17+"
+              "description": "Check only files that exactly match the given regular expression; default is to match files that don't start with 'test_' but end with '.py'."
             },
             "matchDir": {
               "order": 3,
               "title": "Match Dir",
               "type": "string",
               "default": "[^\\.].*",
-              "description": "Search only dirs that exactly match the given regular expression; default is to match dirs which do not begin with a dot. Requires `pyls` 0.17+"
+              "description": "Search only dirs that exactly match the given regular expression; default is to match dirs which do not begin with a dot."
             },
             "select": {
               "order": 4,
@@ -250,7 +250,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Select errors and warnings Requires `pyls` 0.17+"
+              "description": "Select errors and warnings"
             },
             "ignore": {
               "order": 5,
@@ -260,7 +260,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Ignore errors and warnings Requires `pyls` 0.17+"
+              "description": "Ignore errors and warnings"
             },
             "convention": {
               "order": 6,
@@ -272,7 +272,7 @@
                 ""
               ],
               "default": "",
-              "description": "Choose the basic list of checked errors by specifying an existing convention. Requires `pyls` 0.17+"
+              "description": "Choose the basic list of checked errors by specifying an existing convention."
             },
             "addSelect": {
               "order": 7,
@@ -282,7 +282,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Select errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
+              "description": "Select errors and warnings in addition to the specified convention."
             },
             "addIgnore": {
               "order": 8,
@@ -292,7 +292,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Ignore errors and warnings in addition to the specified convention. Requires `pyls` 0.17+"
+              "description": "Ignore errors and warnings in addition to the specified convention."
             }
           }
         },
@@ -316,7 +316,7 @@
               "title": "Enabled",
               "type": "boolean",
               "default": false,
-              "description": "Enable or disable the plugin. Requires `pyls` 0.12.1+"
+              "description": "Enable or disable the plugin."
             }
           }
         },
@@ -340,7 +340,7 @@
               "title": "Enabled",
               "type": "boolean",
               "default": true,
-              "description": "Enable or disable autopep8. Formats code according to PyCodeStyle config. Requires `pyls` 0.17+"
+              "description": "Enable or disable autopep8. Formats code according to PyCodeStyle config."
             }
           }
         }
