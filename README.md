@@ -28,12 +28,12 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 Install the language server (0.19.0 or newer) with:
 
 ```bash
-pip install 'python-language-server[all]'
+python -m pip install 'python-language-server[all]'
 ```
 
 This command will install the language server and all supported feature providers, which can be enabled or disabled in the settings. Checkout the [official installation instructions](https://github.com/palantir/python-language-server#installation) on how to install only the providers you need.
 
-Verify that everything is correctly installed and `pyls` is on your `PATH` by running `pyls --help` from the command line.
+You can verify that everything is correctly installed by running `python -m pyls --help` from the command line.
 It should return
 
 ```bash
@@ -44,7 +44,7 @@ Python Language Server
 ...
 ```
 
-Depending on your Python setup `pyls` may be installed in a non default folder. In this case either add the directory to your `PATH` or edit the "Python Language Server Path" setting of `ide-python` to point to the `pyls` executable.
+If you have installed `pyls` using a non default installation of Python, you can add modify the *Python Executable* config in the `ide-python` settings.
 
 ### Atom Package
 
