@@ -1,5 +1,5 @@
 const path = require("path");
-const { detectVirtualEnv } = require("../lib/utils");
+const { detectVirtualEnv, sanitizeConfig } = require("../lib/utils");
 
 const venvFixturesDir = path.join(__dirname, "fixtures", "venv");
 
@@ -48,5 +48,26 @@ describe("detectVirtualEnv", () => {
         expect(venv).toEqual(venvPath);
       });
     });
+  });
+});
+
+describe("sanitizeConfig", () => {
+  it("converts 'null' to null", () => {
+    const config = {
+      ropeFolder: "null",
+      extensionModules: ["numpy", "pandas"]
+    };
+    expect(sanitizeConfig(config)).toEqual({
+      ropeFolder: null,
+      extensionModules: ["numpy", "pandas"]
+    });
+  });
+
+  it("doesn't change object", () => {
+    const config = {
+      ropeFolder: ".ropeproject",
+      extensionModules: ["numpy", "pandas"]
+    };
+    expect(sanitizeConfig(config)).toEqual(config);
   });
 });
