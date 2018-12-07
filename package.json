@@ -39,8 +39,15 @@
       "default": "python",
       "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server."
     },
-    "pylsConfigurationSources": {
+    "pipenvPath": {
+      "title": "Pipenv directory",
       "order": 2,
+      "type": "string",
+      "default": "",
+      "description": "Absolute path to your pipenv directory where your virtual environments are located. This option will be used if a Pipfile is detected on your project"
+    },
+    "pylsConfigurationSources": {
+      "order": 3,
       "type": "array",
       "default": [
         "pycodestyle",
@@ -58,7 +65,7 @@
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
       "type": "object",
-      "order": 3,
+      "order": 4,
       "properties": {
         "jedi_completion": {
           "title": "Jedi Completion",
