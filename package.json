@@ -37,17 +37,10 @@
       "order": 1,
       "type": "string",
       "default": "python",
-      "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server."
-    },
-    "pipenvPath": {
-      "title": "Pipenv directory",
-      "order": 2,
-      "type": "string",
-      "default": "",
-      "description": "Absolute path to your pipenv directory where your virtual environments are located. This option will be used if a Pipfile is detected on your project"
+      "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server. Use $PIPENV_PATH if you want to use the pipenv you've specified."
     },
     "pylsConfigurationSources": {
-      "order": 3,
+      "order": 2,
       "type": "array",
       "default": [
         "pycodestyle",
@@ -65,7 +58,7 @@
     "pylsPlugins": {
       "title": "Python Language Server Plugins",
       "type": "object",
-      "order": 4,
+      "order": 3,
       "properties": {
         "jedi_completion": {
           "title": "Jedi Completion",
