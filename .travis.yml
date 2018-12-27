@@ -1,6 +1,6 @@
 language: generic
 dist: trusty
-sudo: false
+sudo: true
 notifications:
   email:
     on_success: never
