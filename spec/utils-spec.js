@@ -1,7 +1,8 @@
 const path = require("path");
-const { detectVirtualEnv, sanitizeConfig } = require("../lib/utils");
+const { detectVirtualEnv, sanitizeConfig, detectPipEnv } = require("../lib/utils");
 
 const venvFixturesDir = path.join(__dirname, "fixtures", "venv");
+const pipEnvFixturesDir = path.join(__dirname, "fixtures", "pipenv");
 
 describe("detectVirtualEnv", () => {
   it("detects no virtual env when there isn't any", () => {
@@ -46,6 +47,24 @@ describe("detectVirtualEnv", () => {
     waitsForPromise(() => {
       return detectVirtualEnv(projectPath).then(venv => {
         expect(venv).toEqual(venvPath);
+      });
+    });
+  });
+});
+
+describe("detect PipEnv", () => {
+  it("with no pipenv", () => {
+    waitsForPromise(() => {
+      return detectPipEnv(path.join(pipEnvFixturesDir, "none")).then(venv => {
+        expect(venv).toBeNull();
+      });
+    });
+  });
+
+  it("with Unix pipenv", () => {
+    waitsForPromise(() => {
+      return detectPipEnv(path.join(pipEnvFixturesDir, "unix")).then(venv => {
+        expect(venv).toBe('/home/tvallois/.local/share/virtualenvs/unix-XZE001N_');
       });
     });
   });
