@@ -2,7 +2,7 @@ const path = require("path");
 const mockSpawn = require("mock-spawn");
 const assert = require("assert");
 const child_process = require('child_process');
-const { detectVirtualEnv, sanitizeConfig, detectPipEnv } = require("../lib/utils");
+const { detectVirtualEnv, sanitizeConfig, detectPipEnv, replacePipEnvPathVar } = require("../lib/utils");
 
 const venvFixturesDir = path.join(__dirname, "fixtures", "venv");
 
@@ -92,6 +92,21 @@ describe("detect PipEnv", () => {
       });
     });
   });
+});
+
+describe("replacePipEnvPathVar", () => {
+  it("replace $PIPENV_PATH", () => {
+    expect(replacePipEnvPathVar("$PIPENV_PATH/bin/python",
+     "/home/tvallois/.local/share/virtualenvs/unix-XZE001N_"))
+     .toEqual("/home/tvallois/.local/share/virtualenvs/unix-XZE001N_/bin/python");
+  });
+
+  it("no $PIPENV_PATH", () => {
+    expect(replacePipEnvPathVar("python",
+     "/home/tvallois/.local/share/virtualenvs/unix-XZE001N_"))
+     .toEqual("python");
+  });
+
 });
 
 describe("sanitizeConfig", () => {
