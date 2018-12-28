@@ -1,12 +1,9 @@
 language: generic
 dist: trusty
-sudo: true
+sudo: false
 notifications:
   email:
     on_success: never
     on_failure: change
-
-install:
-  - sudo pip install pipenv
 
 script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'

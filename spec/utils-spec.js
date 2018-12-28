@@ -1,8 +1,10 @@
 const path = require("path");
+const mockSpawn = require("mock-spawn");
+const assert = require("assert");
+const child_process = require('child_process');
 const { detectVirtualEnv, sanitizeConfig, detectPipEnv } = require("../lib/utils");
 
 const venvFixturesDir = path.join(__dirname, "fixtures", "venv");
-const pipEnvFixturesDir = path.join(__dirname, "fixtures", "pipenv");
 
 describe("detectVirtualEnv", () => {
   it("detects no virtual env when there isn't any", () => {
@@ -53,18 +55,40 @@ describe("detectVirtualEnv", () => {
 });
 
 describe("detect PipEnv", () => {
+  const spawn = mockSpawn()
+  child_process.spawn = spawn
+  spawn.sequence.add(function (cb) {
+    this.emit('error', new Error('spawn ENOENT'));
+    setTimeout(function() { return cb(8); }, 10);
+  });
   it("with no pipenv", () => {
     waitsForPromise(() => {
-      return detectPipEnv(path.join(pipEnvFixturesDir, "none")).then(venv => {
+      return detectPipEnv("/home/mock_pipenv").then(venv => {
         expect(venv).toBeNull();
+        assert.equal('pipenv', spawn.calls[0].command);
+        assert.deepEqual(['--venv'], spawn.calls[0].args);
       });
     });
   });
 
   it("with Unix pipenv", () => {
+    spawn.sequence.add(spawn.simple(1, '/home/tvallois/.local/share/virtualenvs/unix-XZE001N_'));
     waitsForPromise(() => {
-      return detectPipEnv(path.join(pipEnvFixturesDir, "unix")).then(venv => {
+      return detectPipEnv("/home/mock_pipenv").then(venv => {
         expect(venv).toBe('/home/tvallois/.local/share/virtualenvs/unix-XZE001N_');
+        assert.equal('pipenv', spawn.calls[1].command);
+        assert.deepEqual(['--venv'], spawn.calls[1].args);
+      });
+    });
+  });
+
+  it("with Windows pipenv", () => {
+    spawn.sequence.add(spawn.simple(1, 'C:\\Program Files\\tvallois\\virtualenvs\\windows-XZE001N_'));
+    waitsForPromise(() => {
+      return detectPipEnv("C:\\Program Files\\mock_pipenv").then(venv => {
+        expect(venv).toBe('C:\\Program Files\\tvallois\\virtualenvs\\windows-XZE001N_');
+        assert.equal('pipenv', spawn.calls[2].command);
+        assert.deepEqual(['--venv'], spawn.calls[2].args);
       });
     });
   });
