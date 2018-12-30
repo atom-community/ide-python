@@ -29,7 +29,7 @@
     "atom-languageclient": "0.9.9"
   },
   "devDependencies": {
-    "mock-spawn": "^0.2.6"
+    "mock-spawn": "0.2.6"
   },
   "enhancedScopes": [
     "source.python"
