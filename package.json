@@ -34,6 +34,9 @@
   "enhancedScopes": [
     "source.python"
   ],
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
   "configSchema": {
     "python": {
       "title": "Python Executable",
