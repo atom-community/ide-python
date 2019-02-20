@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
