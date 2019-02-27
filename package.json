@@ -75,6 +75,12 @@
               "type": "boolean",
               "default": true,
               "description": "Enable or disable Jedi Completion."
+            },
+            "include_params": {
+              "title": "Include parameters",
+              "type": "boolean",
+              "default": true,
+              "description": "Auto-completes methods and classes with tabstops for each parameter."
             }
           }
         },
