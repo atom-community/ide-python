@@ -395,6 +395,18 @@
             }
           }
         },
+        "pylint": {
+          "title": "Pylint",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": false,
+              "description": "Enable or disable Pylint. Note that Pylint can only be run on files that have been saved to disk."
+            }
+          }
+        },
         "rope_completion": {
           "title": "Rope Completion",
           "type": "object",
