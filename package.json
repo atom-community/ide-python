@@ -11,6 +11,7 @@
     "jedi",
     "rope",
     "pyflakes",
+    "pylint",
     "pycodestyle",
     "pydocstyle",
     "autopep8",
