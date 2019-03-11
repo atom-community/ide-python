@@ -12,20 +12,21 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ## Feature Providers
 
-* [Jedi](https://github.com/davidhalter/jedi) for Completions, Definitions, Hover, References, Signature Help, and Symbols
-* [Rope](https://github.com/python-rope/rope) for Completions and renaming
-* [Pyflakes](https://github.com/PyCQA/pyflakes) linter to detect various errors
-* [McCabe](https://github.com/PyCQA/mccabe) linter for complexity checking
-* [pycodestyle](https://github.com/PyCQA/pycodestyle) linter for style checking
-* [pydocstyle](https://github.com/PyCQA/pydocstyle) linter for docstring style checking
-* [autopep8](https://github.com/hhatto/autopep8) for code formatting (preferred over YAPF)
-* [YAPF](https://github.com/google/yapf) for code formatting
+- [Jedi](https://github.com/davidhalter/jedi) for Completions, Definitions, Hover, References, Signature Help, and Symbols
+- [Rope](https://github.com/python-rope/rope) for Completions and renaming
+- [Pyflakes](https://github.com/PyCQA/pyflakes) linter to detect various errors
+- [McCabe](https://github.com/PyCQA/mccabe) linter for complexity checking
+- [pycodestyle](https://github.com/PyCQA/pycodestyle) linter for style checking
+- [Pylint](https://www.pylint.org/) linter to detect various errors
+- [pydocstyle](https://github.com/PyCQA/pydocstyle) linter for docstring style checking
+- [autopep8](https://github.com/hhatto/autopep8) for code formatting (preferred over YAPF)
+- [YAPF](https://github.com/google/yapf) for code formatting
 
 ## Installation
 
 ### Language Server
 
-Install the language server (0.19.0 or newer) with:
+Install the language server (0.25.0 or newer) with:
 
 ```bash
 python -m pip install 'python-language-server[all]'
@@ -44,7 +45,7 @@ Python Language Server
 ...
 ```
 
-If you have installed `pyls` using a non default installation of Python, you can add modify the *Python Executable* config in the `ide-python` settings.
+If you have installed `pyls` using a non default installation of Python, you can add modify the _Python Executable_ config in the `ide-python` settings.
 
 ### Atom Package
 
@@ -59,8 +60,8 @@ apm install ide-python
 
 Configuration is loaded from zero or more configuration sources.
 
-* `pycodestyle`: discovered in `~/.config/pycodestyle`, `setup.cfg`, `tox.ini` and `pycodestyle.cfg`
-* `flake8`: discovered in `~/.config/flake8`, `setup.cfg`, `tox.ini` and `flake8.cfg`
+- `pycodestyle`: discovered in `~/.config/pycodestyle`, `setup.cfg`, `tox.ini` and `pycodestyle.cfg`
+- `flake8`: discovered in `~/.config/flake8`, `setup.cfg`, `tox.ini` and `flake8.cfg`
 
 Overall configuration is computed first from user configuration (in home directory), overridden by configuration in the `ide-python` settings, and then overridden by configuration discovered in the current project.
 
