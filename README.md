@@ -8,7 +8,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ## Requirements
 
-[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.19+`](https://github.com/palantir/python-language-server) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
+[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.29+`](https://github.com/palantir/python-language-server) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
 
 ## Feature Providers
 
@@ -18,6 +18,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 - [McCabe](https://github.com/PyCQA/mccabe) linter for complexity checking
 - [pycodestyle](https://github.com/PyCQA/pycodestyle) linter for style checking
 - [Pylint](https://www.pylint.org/) linter to detect various errors
+- [Flake8](http://flake8.pycqa.org/en/latest/) linter to detect various errors
 - [pydocstyle](https://github.com/PyCQA/pydocstyle) linter for docstring style checking
 - [autopep8](https://github.com/hhatto/autopep8) for code formatting (preferred over YAPF)
 - [YAPF](https://github.com/google/yapf) for code formatting
@@ -26,7 +27,7 @@ Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Py
 
 ### Language Server
 
-Install the language server (0.25.0 or newer) with:
+Install the language server (0.29.0 or newer) with:
 
 ```bash
 python -m pip install 'python-language-server[all]'
