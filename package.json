@@ -12,6 +12,7 @@
     "rope",
     "pyflakes",
     "pylint",
+    "flake8",
     "pycodestyle",
     "pydocstyle",
     "autopep8",
@@ -393,6 +394,93 @@
               "type": "boolean",
               "default": true,
               "description": "Enable or disable PyFlakes."
+            }
+          }
+        },
+        "flake8": {
+          "title": "Flake8",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "order": 1,
+              "type": "boolean",
+              "default": false,
+              "description": "Enable or disable Flake8."
+            },
+            "exclude": {
+              "title": "Exclude",
+              "type": "array",
+              "default": [
+                ".svn",
+                "CVS",
+                ".bzr",
+                ".hg",
+                ".git",
+                "__pycache__",
+                ".tox",
+                ".eggs",
+                "*.egg"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Comma-separated list of files or directories to exclude."
+            },
+            "filename": {
+              "title": "Filename",
+              "type": "array",
+              "default": [
+                "*.py"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Only check for filenames matching the patterns in this comma-separated list."
+            },
+            "hangClosing": {
+              "title": "Hang Closing",
+              "type": "boolean",
+              "default": false,
+              "description": "Hang closing bracket instead of matching indentation of opening bracket's line."
+            },
+            "ignore": {
+              "title": "Ignore",
+              "type": "array",
+              "default": [
+                "E121",
+                "E123",
+                "E126",
+                "E226",
+                "E24",
+                "E704",
+                "W503",
+                "W504"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Comma-separated list of errors and warnings to ignore (or skip)."
+            },
+            "maxLineLength": {
+              "title": "Max Line Length",
+              "type": "number",
+              "default": 79,
+              "description": "Maximum allowed line length for the entirety of this run."
+            },
+            "select": {
+              "title": "Select",
+              "type": "array",
+              "default": [
+                "E",
+                "F",
+                "W",
+                "C90"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Comma-separated list of errors and warnings to enable."
             }
           }
         },
