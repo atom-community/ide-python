@@ -404,7 +404,17 @@
               "title": "Enabled",
               "type": "boolean",
               "default": false,
+              "order": 1,
               "description": "Enable or disable Pylint. Note that Pylint can only be run on files that have been saved to disk."
+            },
+            "args": {
+              "title": "Arguments",
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              },
+              "description": "List of arguments to pass to pylint."
             }
           }
         },
