@@ -2,13 +2,17 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for [Atom-IDE](https://ide.atom.io/), powered by the [Python language server](https://github.com/palantir/python-language-server).
+Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server). 
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
 ## Requirements
 
-[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.29+`](https://github.com/palantir/python-language-server) and the [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) package to expose the functionality within Atom.
+[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.29+`](https://github.com/palantir/python-language-server) and the [`atom-ide-base`](https://atom.io/packages/atom-ide-base) package to expose the functionality within Atom.
+
+### Important
+
+Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.  
 
 ## Feature Providers
 
@@ -50,10 +54,10 @@ If you have installed `pyls` using a non default installation of Python, you can
 
 ### Atom Package
 
-Install `ide-python` and [`atom-ide-ui`](https://atom.io/packages/atom-ide-ui) from _Install_ in Atom's settings or run:
+Install `ide-python` and [`atom-ide-base`](https://atom.io/packages/atom-ide-base) from _Install_ in Atom's settings or run:
 
 ```bash
-apm install atom-ide-ui
+apm install atom-ide-base
 apm install ide-python
 ```
 
