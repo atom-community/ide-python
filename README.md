@@ -2,7 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server). 
+Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server).
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
@@ -60,6 +60,22 @@ Install `ide-python` and [`atom-ide-base`](https://atom.io/packages/atom-ide-bas
 apm install atom-ide-base
 apm install ide-python
 ```
+
+To use the debugger you need to install `atom-ide-debugger` and `atom-ide-console` as well:
+```
+apm install atom-ide-debugger
+apm install atom-ide-console
+```
+
+### Debugger (experimental)
+After installation of the above packages:
+
+- Open the file you need to debug
+- Use CTRL+SHIFT+P and run "Show Debugger" to show the debugger pane
+- Click add target button and fill the information
+- Debug your application like the gif
+
+![python-debugger](https://user-images.githubusercontent.com/16418197/98758920-7a118580-2395-11eb-9b46-6dc62a1d80e6.gif)
 
 ## Configuration
 
