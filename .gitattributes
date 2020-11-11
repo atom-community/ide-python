@@ -1,0 +1,3 @@
+# Exclude VendorLib
+lib/debugger/VendorLib/vs-py-debugger/ linguist-vendored
+lib/debugger/VendorLib/vs-py-debugger/  -diff
