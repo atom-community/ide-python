@@ -1,3 +1,10 @@
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
 # Exclude VendorLib
-lib/debugger/VendorLib/vs-py-debugger/ linguist-vendored
-lib/debugger/VendorLib/vs-py-debugger/  -diff
+lib/debugger/VendorLib/vs-py-debugger/**/* linguist-vendored
+lib/debugger/VendorLib/vs-py-debugger/**/*  -diff
+
+dist -diff
+dist/**/* linguist-vendored
