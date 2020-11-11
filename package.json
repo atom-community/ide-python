@@ -32,8 +32,9 @@
     "clean": "shx rm -rf dist",
     "babel": "npm run clean && shx cp -r lib dist && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=false babel dist --out-dir dist",
     "copy": "shx cp -r lib/debugger/VendorLib dist/debugger",
+    "build": "npm run babel",
     "build-commit": "build-commit -o dist",
-    "prepare": "npm run babel"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "atom-languageclient": "0.9.9",
