@@ -1,6 +1,6 @@
 {
   "name": "ide-python",
-  "main": "./lib/main",
+  "main": "./dist/main",
   "version": "1.5.2",
   "description": "Python language support for Atom-IDE",
   "keywords": [
@@ -26,6 +26,13 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.21.0 <2.0.0"
+  },
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "babel": "npm run clean && shx cp -r lib dist && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=false babel dist --out-dir dist",
+    "copy": "shx cp -r lib/debugger/VendorLib dist/debugger",
+    "build-commit": "build-commit -o dist",
+    "prepare": "npm run babel"
   },
   "dependencies": {
     "atom-languageclient": "0.9.9",
