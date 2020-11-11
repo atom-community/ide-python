@@ -1,0 +1,3 @@
+// Dummy file to ensue files under src/client get output into the "out/client" directory
+"use strict";
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImR1bW15LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLy8gRHVtbXkgZmlsZSB0byBlbnN1ZSBmaWxlcyB1bmRlciBzcmMvY2xpZW50IGdldCBvdXRwdXQgaW50byB0aGUgXCJvdXQvY2xpZW50XCIgZGlyZWN0b3J5XHJcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWR1bW15LmpzLm1hcCJdfQ==

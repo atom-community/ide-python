@@ -1,0 +1,32 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); // From here:
+// https://stackoverflow.com/questions/37257911/detect-light-dark-theme-programatically-in-visual-studio-code
+// Detect vscode-light, vscode-dark, and vscode-high-contrast class name on the body element.
+
+function detectTheme() {
+  const body = document.body;
+
+  if (body) {
+    switch (body.className) {
+      default:
+      case 'vscode-light':
+        return 'vscode-light';
+
+      case 'vscode-dark':
+        return 'vscode-dark';
+
+      case 'vscode-high-contrast':
+        return 'vscode-high-contrast';
+    }
+  }
+
+  return 'vscode-light';
+}
+
+exports.detectTheme = detectTheme;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRoZW1lRGV0ZWN0b3IuanMiXSwibmFtZXMiOlsiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwidmFsdWUiLCJkZXRlY3RUaGVtZSIsImJvZHkiLCJkb2N1bWVudCIsImNsYXNzTmFtZSJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBOztBQUNBQSxNQUFNLENBQUNDLGNBQVAsQ0FBc0JDLE9BQXRCLEVBQStCLFlBQS9CLEVBQTZDO0FBQUVDLEVBQUFBLEtBQUssRUFBRTtBQUFULENBQTdDLEUsQ0FDQTtBQUNBO0FBQ0E7O0FBQ0EsU0FBU0MsV0FBVCxHQUF1QjtBQUNuQixRQUFNQyxJQUFJLEdBQUdDLFFBQVEsQ0FBQ0QsSUFBdEI7O0FBQ0EsTUFBSUEsSUFBSixFQUFVO0FBQ04sWUFBUUEsSUFBSSxDQUFDRSxTQUFiO0FBQ0k7QUFDQSxXQUFLLGNBQUw7QUFDSSxlQUFPLGNBQVA7O0FBQ0osV0FBSyxhQUFMO0FBQ0ksZUFBTyxhQUFQOztBQUNKLFdBQUssc0JBQUw7QUFDSSxlQUFPLHNCQUFQO0FBUFI7QUFTSDs7QUFDRCxTQUFPLGNBQVA7QUFDSDs7QUFDREwsT0FBTyxDQUFDRSxXQUFSLEdBQXNCQSxXQUF0QiIsInNvdXJjZXNDb250ZW50IjpbIi8vIENvcHlyaWdodCAoYykgTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4vLyBMaWNlbnNlZCB1bmRlciB0aGUgTUlUIExpY2Vuc2UuXHJcbid1c2Ugc3RyaWN0JztcclxuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFwiX19lc01vZHVsZVwiLCB7IHZhbHVlOiB0cnVlIH0pO1xyXG4vLyBGcm9tIGhlcmU6XHJcbi8vIGh0dHBzOi8vc3RhY2tvdmVyZmxvdy5jb20vcXVlc3Rpb25zLzM3MjU3OTExL2RldGVjdC1saWdodC1kYXJrLXRoZW1lLXByb2dyYW1hdGljYWxseS1pbi12aXN1YWwtc3R1ZGlvLWNvZGVcclxuLy8gRGV0ZWN0IHZzY29kZS1saWdodCwgdnNjb2RlLWRhcmssIGFuZCB2c2NvZGUtaGlnaC1jb250cmFzdCBjbGFzcyBuYW1lIG9uIHRoZSBib2R5IGVsZW1lbnQuXHJcbmZ1bmN0aW9uIGRldGVjdFRoZW1lKCkge1xyXG4gICAgY29uc3QgYm9keSA9IGRvY3VtZW50LmJvZHk7XHJcbiAgICBpZiAoYm9keSkge1xyXG4gICAgICAgIHN3aXRjaCAoYm9keS5jbGFzc05hbWUpIHtcclxuICAgICAgICAgICAgZGVmYXVsdDpcclxuICAgICAgICAgICAgY2FzZSAndnNjb2RlLWxpZ2h0JzpcclxuICAgICAgICAgICAgICAgIHJldHVybiAndnNjb2RlLWxpZ2h0JztcclxuICAgICAgICAgICAgY2FzZSAndnNjb2RlLWRhcmsnOlxyXG4gICAgICAgICAgICAgICAgcmV0dXJuICd2c2NvZGUtZGFyayc7XHJcbiAgICAgICAgICAgIGNhc2UgJ3ZzY29kZS1oaWdoLWNvbnRyYXN0JzpcclxuICAgICAgICAgICAgICAgIHJldHVybiAndnNjb2RlLWhpZ2gtY29udHJhc3QnO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIHJldHVybiAndnNjb2RlLWxpZ2h0JztcclxufVxyXG5leHBvcnRzLmRldGVjdFRoZW1lID0gZGV0ZWN0VGhlbWU7XHJcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPXRoZW1lRGV0ZWN0b3IuanMubWFwIl19
