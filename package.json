@@ -438,6 +438,26 @@
             }
           }
         },
+        "pyls_mypy": {
+          "title": "MyPy",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "order": 1,
+              "default": true,
+              "description": "Enable or disable MyPy."
+            },
+            "live_mode": {
+              "title": "Live mode",
+              "type": "boolean",
+              "order": 1,
+              "default": false,
+              "description": "Turn on live mode (If disabled, mypy linters on file save)."
+            }
+          }
+        },
         "flake8": {
           "title": "Flake8",
           "type": "object",
