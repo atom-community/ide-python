@@ -37,7 +37,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "atom-languageclient": "0.9.9",
+    "atom-languageclient": "1.0.3",
     "arch": "2.1.0",
     "dotenv": "5.0.1",
     "fs-extra": "4.0.3",
