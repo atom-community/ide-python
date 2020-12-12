@@ -19,7 +19,7 @@ jobs:
       - run: |
           ncu -u --dep prod
           npm install
-
+          npm run build-commit
 
       - uses: tibdex/github-app-token@v1
         id: generate-token
@@ -29,7 +29,7 @@ jobs:
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          commit-message: Update Dependencies
+          commit-message: "fix: Update Dependencies"
           title: "fix: Update Dependencies"
           labels: Dependencies
           branch: "Bump_Dependencies"
@@ -49,6 +49,7 @@ jobs:
       - run: |
           ncu -u --dep dev
           npm install
+          npm run build-commit
 
       - uses: tibdex/github-app-token@v1
         id: generate-token
@@ -58,7 +59,7 @@ jobs:
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          commit-message: Update devDependencies
+          commit-message: "chore: Update devDependencies"
           title: "chore: Update devDependencies"
           labels: Dependencies
           branch: "Bump_devDependencies"
