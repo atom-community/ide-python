@@ -67,11 +67,11 @@
   },
   "devDependencies": {
     "mock-spawn": "0.2.6",
-    "shx": "^0.3.2",
-    "cross-env": "^7.0.2",
-    "@babel/cli": "7.11.6",
-    "@babel/core": "7.11.6",
-    "babel-preset-atomic": "^2.4.2",
+    "shx": "^0.3.3",
+    "cross-env": "^7.0.3",
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "babel-preset-atomic": "^3.0.0",
     "build-commit": "0.1.1"
   },
   "enhancedScopes": [
