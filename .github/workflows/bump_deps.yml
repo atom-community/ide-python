@@ -19,7 +19,7 @@ jobs:
       - run: |
           ncu -u --dep prod
           npm install
-
+          npm run build-commit
 
       - uses: tibdex/github-app-token@v1
         id: generate-token
@@ -49,6 +49,7 @@ jobs:
       - run: |
           ncu -u --dep dev
           npm install
+          npm run build-commit
 
       - uses: tibdex/github-app-token@v1
         id: generate-token
