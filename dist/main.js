@@ -88,7 +88,7 @@ class PythonLanguageClient extends AutoLanguageClient {
             text: "Download Python",
             onDidClick: () => shell.openExternal("https://www.python.org/downloads/")
           }],
-          description: "Make sure to install `pyls` 0.19 or newer by running:\n" + "```\n" + `${python} -m pip install 'python-language-server[all]'\n` + `${python} -m pip install git+git+https://github.com/tomv564/pyls-mypy.git\n` +"```"
+          description: "Make sure to install `pyls` 0.19 or newer by running:\n" + "```\n" + `${python} -m pip install 'python-language-server[all]'\n` + `${python} -m pip install git+https://github.com/tomv564/pyls-mypy.git\n` +"```"
         });
       }
     });
