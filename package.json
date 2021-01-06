@@ -71,7 +71,7 @@
     "cross-env": "^7.0.3",
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.10",
-    "babel-preset-atomic": "^3.0.0",
+    "babel-preset-atomic": "^3.0.1",
     "build-commit": "0.1.1"
   },
   "enhancedScopes": [
