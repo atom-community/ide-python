@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/lgeiger/ide-python/compare/v1.7.2...v1.7.3) (2021-01-31)
+
+
+### Bug Fixes
+
+* **deps:** update atom-languageclient to ^1.0.6 ([d078249](https://github.com/lgeiger/ide-python/commit/d0782490c405fbc3a762cad6c0c687be1f86a74b))
+
 ## [1.7.2](https://github.com/lgeiger/ide-python/compare/v1.7.1...v1.7.2) (2021-01-05)
 
 
