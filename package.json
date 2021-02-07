@@ -28,6 +28,10 @@
     "atom": ">=1.21.0 <2.0.0"
   },
   "scripts": {
+    "format": "prettier --write .",
+    "test.format": "prettier . --check",
+    "lint": "eslint . --fix",
+    "test.lint": "eslint .",
     "test": "apm test",
     "clean": "shx rm -rf dist",
     "babel": "npm run clean && shx cp -r lib dist && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=false babel dist --out-dir dist",
