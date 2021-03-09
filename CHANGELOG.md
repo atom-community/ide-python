@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/lgeiger/ide-python/compare/v1.7.3...v1.7.4) (2021-03-09)
+
+
+### Bug Fixes
+
+* update languageclient ([#291](https://github.com/lgeiger/ide-python/issues/291)) ([a52eadf](https://github.com/lgeiger/ide-python/commit/a52eadf4ff491bd25762c1167905daa27faaaa71))
+
 ## [1.7.3](https://github.com/lgeiger/ide-python/compare/v1.7.2...v1.7.3) (2021-01-31)
 
 
