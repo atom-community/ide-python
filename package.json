@@ -41,7 +41,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "atom-languageclient": "^1.0.6",
+    "atom-languageclient": "^1.2.2",
     "arch": "2.1.0",
     "dotenv": "5.0.1",
     "fs-extra": "4.0.3",
@@ -73,10 +73,10 @@
     "mock-spawn": "0.2.6",
     "shx": "^0.3.3",
     "cross-env": "^7.0.3",
-    "@babel/cli": "7.12.10",
-    "@babel/core": "7.12.10",
-    "babel-preset-atomic": "^3.0.1",
-    "build-commit": "0.1.1"
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "babel-preset-atomic": "^3.0.2",
+    "build-commit": "0.1.4"
   },
   "enhancedScopes": [
     "source.python"
