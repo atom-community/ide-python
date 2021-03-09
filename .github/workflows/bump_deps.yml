@@ -24,7 +24,6 @@ jobs:
           ncu -u --dep prod
           pnpm install
 
-
       - uses: tibdex/github-app-token@v1
         id: generate-token
         with:
@@ -37,7 +36,6 @@ jobs:
           title: "fix: Update Dependencies"
           labels: Dependencies
           branch: "Bump_Dependencies"
-
 
   Bump_devDependencies:
     runs-on: ubuntu-latest
