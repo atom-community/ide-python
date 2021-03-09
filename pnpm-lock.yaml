@@ -33,6 +33,7 @@ devDependencies:
   build-commit: 0.1.4
   cross-env: 7.0.3
   mock-spawn: 0.2.6
+  prettier: 2.2.1
   shx: 0.3.3
 lockfileVersion: 5.2
 packages:
@@ -3056,6 +3057,13 @@ packages:
     optional: true
     resolution:
       integrity: sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+  /prettier/2.2.1:
+    dev: true
+    engines:
+      node: '>=10.13.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /process-nextick-args/2.0.1:
     dev: true
     optional: true
@@ -3938,6 +3946,7 @@ specifiers:
   minimatch: 3.0.4
   mock-spawn: 0.2.6
   nullthrows: 1.0.0
+  prettier: ^2.2.1
   react: 16.6.3
   reflect-metadata: 0.1.12
   rxjs: 5.5.9
