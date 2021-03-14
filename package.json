@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./dist/main",
-  "version": "1.6.2",
+  "version": "1.7.4",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -28,6 +28,10 @@
     "atom": ">=1.21.0 <2.0.0"
   },
   "scripts": {
+    "format": "prettier --write .",
+    "test.format": "prettier . --check",
+    "lint": "eslint . --fix",
+    "test.lint": "eslint .",
     "test": "apm test",
     "clean": "shx rm -rf dist",
     "babel": "npm run clean && shx cp -r lib dist && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=false babel dist --out-dir dist",
@@ -37,19 +41,20 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "atom-languageclient": "0.9.9",
+    "@atom-ide-community/nuclide-commons": "^0.8.2",
+    "@atom-ide-community/nuclide-commons-atom": "^0.8.2",
+    "@atom-ide-community/nuclide-debugger-common": "^0.8.2",
     "arch": "2.1.0",
+    "atom-languageclient": "^1.2.2",
     "dotenv": "5.0.1",
     "fs-extra": "4.0.3",
     "getos": "3.1.0",
+    "iconv-lite": "^0.4.21",
     "inversify": "4.11.1",
     "line-by-line": "0.1.5",
     "lodash": "4.17.10",
     "log4js": "1.1.1",
     "minimatch": "3.0.4",
-    "@atom-ide-community/nuclide-commons": "^0.8.2",
-    "@atom-ide-community/nuclide-commons-atom": "^0.8.2",
-    "@atom-ide-community/nuclide-debugger-common": "^0.8.2",
     "nullthrows": "1.0.0",
     "react": "16.6.3",
     "reflect-metadata": "0.1.12",
@@ -62,17 +67,17 @@
     "untildify": "3.0.2",
     "vscode-debugadapter": "1.24.0",
     "vscode-debugprotocol": "1.24.0",
-    "xml2js": "0.4.17",
-    "iconv-lite": "^0.4.21"
+    "xml2js": "0.4.17"
   },
   "devDependencies": {
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "babel-preset-atomic": "^3.0.2",
+    "build-commit": "0.1.4",
+    "cross-env": "^7.0.3",
     "mock-spawn": "0.2.6",
-    "shx": "^0.3.2",
-    "cross-env": "^7.0.2",
-    "@babel/cli": "7.11.6",
-    "@babel/core": "7.11.6",
-    "babel-preset-atomic": "^2.4.2",
-    "build-commit": "0.1.1"
+    "prettier": "^2.2.1",
+    "shx": "^0.3.3"
   },
   "enhancedScopes": [
     "source.python"
