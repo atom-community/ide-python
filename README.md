@@ -12,7 +12,7 @@ Python language support for [Atom-IDE](https://atom-ide-community.github.io), po
 
 ### Important
 
-Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.  
+Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.
 
 ## Feature Providers
 
@@ -62,12 +62,14 @@ apm install ide-python
 ```
 
 To use the debugger you need to install `atom-ide-debugger` and `atom-ide-console` as well:
+
 ```
 apm install atom-ide-debugger
 apm install atom-ide-console
 ```
 
 ### Debugger (experimental)
+
 After installation of the above packages:
 
 - Open the file you need to debug

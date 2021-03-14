@@ -29,6 +29,33 @@ jobs:
       - name: Run tests 👩🏾‍💻
         run: npm run test
 
+  Lint:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Commit lint ✨
+        uses: wagoid/commitlint-github-action@v2
+
+      - uses: UziTech/action-setup-atom@v1
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v1.2.1
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Format ✨
+        run: pnpm test.format
+      #
+      # - name: Lint ✨
+      #   run: pnpm test.lint
+
   Release:
     needs: [Test]
     if: github.ref == 'refs/heads/master' &&
@@ -44,14 +71,14 @@ jobs:
         run: npm install
       - name: Build and Commit
         run: npm run build-commit
-      # - name: Release 🎉
-      #   uses: cycjimmy/semantic-release-action@v2
-      #   with:
-      #     extends: |
-      #       @semantic-release/apm-config
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN  }}
+      - name: Release 🎉
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extends: |
+            @semantic-release/apm-config
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN  }}
 
   Skip:
     if: contains(github.event.head_commit.message, '[skip ci]')
