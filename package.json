@@ -72,7 +72,7 @@
   "devDependencies": {
     "@babel/cli": "7.13.10",
     "@babel/core": "7.13.10",
-    "babel-preset-atomic": "^3.0.2",
+    "babel-preset-atomic": "^3.0.3",
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
     "mock-spawn": "0.2.6",
