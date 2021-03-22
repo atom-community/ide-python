@@ -458,7 +458,7 @@
               "title": "Live mode",
               "type": "boolean",
               "order": 1,
-              "default": false,
+              "default": true,
               "description": "Turn on live mode (If disabled, mypy linters on file save)."
             }
           }
