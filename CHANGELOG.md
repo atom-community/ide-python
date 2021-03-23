@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/lgeiger/ide-python/compare/v1.7.4...v1.8.0) (2021-03-23)
+
+
+### Features
+
+* add support for pyls-mypy ([#232](https://github.com/lgeiger/ide-python/issues/232)) ([fb48958](https://github.com/lgeiger/ide-python/commit/fb489582ff25538e026f91815ee58e8a16654688))
+
 ## [1.7.4](https://github.com/lgeiger/ide-python/compare/v1.7.3...v1.7.4) (2021-03-09)
 
 
