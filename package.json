@@ -459,7 +459,7 @@
               "type": "boolean",
               "order": 1,
               "default": true,
-              "description": "Turn on live mode (If disabled, mypy linters on file save)."
+              "description": "Turn on live mode. If disabled, mypy linters on file save. Note: Linting on file save may not work on all machines."
             }
           }
         },
