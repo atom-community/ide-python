@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/lgeiger/ide-python/compare/v1.9.0...v1.9.1) (2021-06-09)
+
+
+### Bug Fixes
+
+* rename pyls-path config to pyls for consistency ([1bb76b5](https://github.com/lgeiger/ide-python/commit/1bb76b5137157a640582da375102252308b94de1))
+
 # [1.9.0](https://github.com/lgeiger/ide-python/compare/v1.8.0...v1.9.0) (2021-06-09)
 
 
