@@ -99,7 +99,7 @@
       "default": "python",
       "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server. Use `$PIPENV_PATH/bin/python` if you want to use the pipenv path of your project"
     },
-    "pyls-path": {
+    "pyls": {
       "title": "Path to pyls executable",
       "order": 2,
       "type": "string",
