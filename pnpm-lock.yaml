@@ -24,7 +24,7 @@ specifiers:
   mock-spawn: 0.2.6
   nullthrows: 1.0.0
   prettier-config-atomic: ^2.0.5
-  react: 16.6.3
+  react: 16.14.0
   reflect-metadata: 0.1.12
   rxjs: 5.5.9
   rxjs-compat: 6.3.3
@@ -56,7 +56,7 @@ dependencies:
   log4js: 1.1.1
   minimatch: 3.0.4
   nullthrows: 1.0.0
-  react: 16.6.3
+  react: 16.14.0
   reflect-metadata: 0.1.12
   rxjs: 5.5.9
   rxjs-compat: 6.3.3
@@ -3382,14 +3382,13 @@ packages:
       react-lifecycles-compat: 3.0.4
     dev: false
 
-  /react/16.6.3:
-    resolution: {integrity: sha512-zCvmH2vbEolgKxtqXL2wmGCUxUyNheYn/C+PD1YAjfxHC54+MhdruyhO7QieQrYsYeTxrn93PM2y0jRH1zEExw==}
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
-      scheduler: 0.11.3
     dev: false
 
   /react/17.0.1:
@@ -3630,13 +3629,6 @@ packages:
 
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
-    dev: false
-
-  /scheduler/0.11.3:
-    resolution: {integrity: sha512-i9X9VRRVZDd3xZw10NY5Z2cVMbdYg6gqFecfj79USv1CFN+YrJ3gIPRKf1qlY+Sxly4djoKdfx1T+m9dnRB8kQ==}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: false
 
   /scheduler/0.20.1:

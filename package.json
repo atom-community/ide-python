@@ -60,7 +60,7 @@
     "log4js": "1.1.1",
     "minimatch": "3.0.4",
     "nullthrows": "1.0.0",
-    "react": "16.6.3",
+    "react": "16.14.0",
     "reflect-metadata": "0.1.12",
     "rxjs": "5.5.9",
     "rxjs-compat": "6.3.3",
