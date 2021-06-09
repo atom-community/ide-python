@@ -81,9 +81,10 @@
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
     "mock-spawn": "0.2.6",
-    "prettier": "^2.2.1",
+    "prettier-config-atomic": "^2.0.5",
     "shx": "^0.3.3"
   },
+  "prettier": "prettier-config-atomic",
   "enhancedScopes": [
     "source.python"
   ],
