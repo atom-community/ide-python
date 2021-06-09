@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./dist/main",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
