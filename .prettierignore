@@ -7,3 +7,4 @@ coverage
 build
 dist
 VendorLib
+.mypy_cache
