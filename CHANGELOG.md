@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/lgeiger/ide-python/compare/v1.9.1...v1.9.2) (2021-06-10)
+
+
+### Bug Fixes
+
+* make python a class attribute ([#338](https://github.com/lgeiger/ide-python/issues/338)) ([4d34da9](https://github.com/lgeiger/ide-python/commit/4d34da93174561f37b01af433817f7a1f9f5d23b)), closes [#336](https://github.com/lgeiger/ide-python/issues/336) [#335](https://github.com/lgeiger/ide-python/issues/335) [#337](https://github.com/lgeiger/ide-python/issues/337)
+
 ## [1.9.1](https://github.com/lgeiger/ide-python/compare/v1.9.0...v1.9.1) (2021-06-09)
 
 
