@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/lgeiger/ide-python/compare/v1.9.2...v1.9.3) (2021-06-13)
+
+
+### Bug Fixes
+
+* the project was not detected ([#344](https://github.com/lgeiger/ide-python/issues/344)) ([a811510](https://github.com/lgeiger/ide-python/commit/a8115105b64422db9fc42214d1402199005f8875))
+
 ## [1.9.2](https://github.com/lgeiger/ide-python/compare/v1.9.1...v1.9.2) (2021-06-10)
 
 
