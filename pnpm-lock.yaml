@@ -7,7 +7,7 @@ specifiers:
   '@babel/cli': 7.14.3
   '@babel/core': 7.14.3
   arch: 2.1.0
-  atom-languageclient: ^1.10.0
+  atom-languageclient: ^1.12.1
   atom-package-deps: ^7.2.3
   babel-preset-atomic: ^4.1.0
   build-commit: 0.1.4
@@ -44,7 +44,7 @@ dependencies:
   '@atom-ide-community/nuclide-commons-atom': 0.8.3
   '@atom-ide-community/nuclide-debugger-common': 0.8.3
   arch: 2.1.0
-  atom-languageclient: 1.10.0
+  atom-languageclient: 1.12.1
   atom-package-deps: 7.2.3
   dotenv: 5.0.1
   fs-extra: 4.0.3
@@ -1674,8 +1674,8 @@ packages:
     dev: true
     optional: true
 
-  /atom-ide-base/2.6.1:
-    resolution: {integrity: sha512-C3I4zLUqyppUHc0JXqy1w6yFsjt+3y014fS892w6ptDa1zbBnWWSlLQOKQyAWieZVgfcvMG+CA8fi9BzZmAFiA==}
+  /atom-ide-base/3.0.0:
+    resolution: {integrity: sha512-+/Ed1MIOTqtchiBv5hqZccXhZ/1NduMHfyC3Ii7/o5MrZS4nsGN71bGf1Du+csLT6Upvz/kznkAZPiL09F47hA==}
     engines: {atom: '>=0.174.0 <2.0.0', pnpm: '>=5.12'}
     dependencies:
       '@types/atom': 1.40.10
@@ -1687,7 +1687,6 @@ packages:
       atom-package-deps: 7.2.3
       classnames: 2.3.1
       dompurify: 2.2.9
-      etch: 0.14.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       rxjs: 6.6.7
@@ -1701,16 +1700,16 @@ packages:
       marked: 1.2.9
     dev: false
 
-  /atom-languageclient/1.10.0:
-    resolution: {integrity: sha512-+LqtHOkEIXFDwQofyHhJ9VPF7IY4zMhvSl26qRUxhDn/02BGjzTmBSIULwScWK+97iKaYwSUKTbJCQP4+rmmBw==}
+  /atom-languageclient/1.12.1:
+    resolution: {integrity: sha512-KMHCy5Hw4xXVxrQboKkWhi/0MUvNnLAzplhSf+lMiOiNp0V9RFxJHNgL64+zKth5Pyo7QAOMtHGAcPmarLM4RA==}
     dependencies:
       '@types/rimraf': 3.0.0
-      atom-ide-base: 2.6.1
+      atom-ide-base: 3.0.0
       rimraf: 3.0.2
       vscode-jsonrpc: 6.0.0
       vscode-languageserver-protocol: 3.16.0
       vscode-languageserver-types: 3.16.0
-      zadeh: 3.0.0-beta.2
+      zadeh: 3.0.0-beta.3
     dev: false
 
   /atom-package-deps/7.2.3:
@@ -2323,10 +2322,6 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /etch/0.14.1:
-    resolution: {integrity: sha512-+IwqSDBhaQFMUHJu4L/ir0dhDoW5IIihg4Z9lzsIxxne8V0PlSg0gnk2STaKWjGJQnDR4cxpA+a/dORX9kycTA==}
-    dev: false
 
   /event-kit/2.2.0:
     resolution: {integrity: sha1-Kd9Q3q49bUwcYkUbEJJfKGQekos=}
@@ -3112,8 +3107,8 @@ packages:
     hasBin: true
     dev: false
 
-  /node-addon-api/3.1.0:
-    resolution: {integrity: sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==}
+  /node-addon-api/3.2.1:
+    resolution: {integrity: sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==}
     dev: false
 
   /node-gyp-build/4.2.3:
@@ -4137,11 +4132,11 @@ packages:
       y18n: 3.2.2
     dev: false
 
-  /zadeh/3.0.0-beta.2:
-    resolution: {integrity: sha512-HHLvrzoeegMkuXaXrQUlQJVRTM2nl23g/obw0ENfMu+xQL+VJA3SQl7cQ73btyUNAQZsrWf9FMegbVLLHOhORg==}
+  /zadeh/3.0.0-beta.3:
+    resolution: {integrity: sha512-qN89LtJMCXQrFxCpF6RxM5mKkGSp42Xf+HDl3lyNuCiGcxj8v1s0T3M2vP7RFqBwo+md2XZmyyXR4BUlOp+CXg==}
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
-      node-addon-api: 3.1.0
+      node-addon-api: 3.2.1
       node-gyp-build: 4.2.3
     dev: false
