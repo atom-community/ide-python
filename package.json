@@ -48,7 +48,7 @@
     "@atom-ide-community/nuclide-commons-atom": "^0.8.2",
     "@atom-ide-community/nuclide-debugger-common": "^0.8.2",
     "arch": "2.1.0",
-    "atom-languageclient": "^1.12.1",
+    "atom-languageclient": "^1.14.1",
     "atom-package-deps": "^7.2.3",
     "dotenv": "5.0.1",
     "fs-extra": "4.0.3",
