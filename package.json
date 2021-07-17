@@ -37,8 +37,7 @@
     "babel": "npm run clean && shx cp -r lib dist && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=false babel dist --out-dir dist",
     "copy": "shx cp -r lib/debugger/VendorLib dist/debugger",
     "build": "npm run babel",
-    "build-commit": "build-commit -o dist",
-    "prepare": "npm run build"
+    "build-commit": "build-commit -o dist"
   },
   "package-deps": [
     "atom-ide-base"
@@ -80,6 +79,7 @@
     "babel-preset-atomic": "^4.2.0",
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
+    "eslint-config-atomic": "^1.16.2",
     "mock-spawn": "0.2.6",
     "prettier-config-atomic": "^2.0.5",
     "shx": "^0.3.3"

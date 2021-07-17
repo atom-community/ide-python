@@ -47,8 +47,8 @@ jobs:
       - name: Format ✨
         run: npm run test.format
 
-      # - name: Lint ✨
-      #   run: npm run test.lint
+      - name: Lint ✨
+        run: npm run test.lint
 
   Release:
     needs: [Test]
