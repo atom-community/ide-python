@@ -1,3 +1,17 @@
+## [1.9.4](https://github.com/lgeiger/ide-python/compare/v1.9.3...v1.9.4) (2021-07-17)
+
+
+### Bug Fixes
+
+* add eslint ([c26448e](https://github.com/lgeiger/ide-python/commit/c26448e85bd7874d74e04af7692b776c3f403481))
+* default to python3 and fallback to python ([2850374](https://github.com/lgeiger/ide-python/commit/2850374140890fff815512bf83ecf4b4c7a97a5d))
+* lazy-load log4js ([6e11dde](https://github.com/lgeiger/ide-python/commit/6e11dde88cad24aab526fb3644e4a1fb3c6186b2))
+* lazy-load RemoteDebuggerCommandService ([c7fff17](https://github.com/lgeiger/ide-python/commit/c7fff17e002225371cbf036b8614daac0c7e62ac))
+* merge activate methods ([e15d390](https://github.com/lgeiger/ide-python/commit/e15d390b937692dd31dd3eda68805b5ff78fdc08))
+* remove excess async ([e52839f](https://github.com/lgeiger/ide-python/commit/e52839f4b1c42e577958baa4876ebb595d90bb25))
+* update atom-languageclient ([cf16a1e](https://github.com/lgeiger/ide-python/commit/cf16a1ebdb953c6efd3af8c38bf51e90fac52a75))
+* use accurate type comparisons and remove unused reject parameters ([dfe5b0d](https://github.com/lgeiger/ide-python/commit/dfe5b0dcc0caf9b4d315c22563ead00a1911d157))
+
 ## [1.9.3](https://github.com/lgeiger/ide-python/compare/v1.9.2...v1.9.3) (2021-06-13)
 
 
