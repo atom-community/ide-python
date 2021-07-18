@@ -4,8 +4,8 @@ specifiers:
   '@atom-ide-community/nuclide-commons': ^0.8.2
   '@atom-ide-community/nuclide-commons-atom': ^0.8.2
   '@atom-ide-community/nuclide-debugger-common': ^0.8.2
-  '@babel/cli': 7.14.3
-  '@babel/core': 7.14.3
+  '@babel/cli': 7.14.5
+  '@babel/core': 7.14.6
   arch: 2.1.0
   atom-languageclient: ^1.14.1
   atom-package-deps: ^7.2.3
@@ -72,8 +72,8 @@ dependencies:
   xml2js: 0.4.17
 
 devDependencies:
-  '@babel/cli': 7.14.3_@babel+core@7.14.3
-  '@babel/core': 7.14.3
+  '@babel/cli': 7.14.5_@babel+core@7.14.6
+  '@babel/core': 7.14.6
   babel-preset-atomic: 4.2.0
   build-commit: 0.1.4
   cross-env: 7.0.3
@@ -221,6 +221,26 @@ packages:
       chokidar: 3.5.1
     dev: true
 
+  /@babel/cli/7.14.5_@babel+core@7.14.6:
+    resolution: {integrity: sha512-poegjhRvXHWO0EAsnYajwYZuqcz7gyfxwfaecUESxDujrqOivf3zrjFbub8IJkrqEaz3fvJWh001EzxBub54fg==}
+    engines: {node: '>=6.9.0'}
+    hasBin: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.14.6
+      commander: 4.1.1
+      convert-source-map: 1.7.0
+      fs-readdir-recursive: 1.1.0
+      glob: 7.1.7
+      make-dir: 2.1.0
+      slash: 2.0.0
+      source-map: 0.5.7
+    optionalDependencies:
+      '@nicolo-ribaudo/chokidar-2': 2.1.8-no-fsevents.2
+      chokidar: 3.5.1
+    dev: true
+
   /@babel/code-frame/7.12.11:
     resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
     dependencies:
@@ -264,6 +284,29 @@ packages:
       '@babel/types': 7.14.4
       convert-source-map: 1.7.0
       debug: 4.3.1
+      gensync: 1.0.0-beta.2
+      json5: 2.2.0
+      semver: 6.3.0
+      source-map: 0.5.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@babel/core/7.14.6:
+    resolution: {integrity: sha512-gJnOEWSqTk96qG5BoIrl5bVtc23DCycmIePPYnamY9RboYdI4nFy5vAQMSl81O5K/W0sLDWfGysnOECC+KUUCA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/code-frame': 7.14.5
+      '@babel/generator': 7.14.5
+      '@babel/helper-compilation-targets': 7.14.5_@babel+core@7.14.6
+      '@babel/helper-module-transforms': 7.14.5
+      '@babel/helpers': 7.14.6
+      '@babel/parser': 7.14.7
+      '@babel/template': 7.14.5
+      '@babel/traverse': 7.14.7
+      '@babel/types': 7.14.5
+      convert-source-map: 1.7.0
+      debug: 4.3.2
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       semver: 6.3.0
@@ -338,6 +381,19 @@ packages:
     dependencies:
       '@babel/compat-data': 7.14.7
       '@babel/core': 7.14.3
+      '@babel/helper-validator-option': 7.14.5
+      browserslist: 4.16.6
+      semver: 6.3.0
+    dev: true
+
+  /@babel/helper-compilation-targets/7.14.5_@babel+core@7.14.6:
+    resolution: {integrity: sha512-v+QtZqXEiOnpO6EYvlImB6zCD2Lel06RzOPzmkz/D/XgQiUu3C/Jb1LOqSt/AIA34TYi/Q+KlT8vTQrgdxkbLw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/compat-data': 7.14.7
+      '@babel/core': 7.14.6
       '@babel/helper-validator-option': 7.14.5
       browserslist: 4.16.6
       semver: 6.3.0
@@ -615,6 +671,17 @@ packages:
       '@babel/template': 7.12.13
       '@babel/traverse': 7.14.2
       '@babel/types': 7.14.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@babel/helpers/7.14.6:
+    resolution: {integrity: sha512-yesp1ENQBiLI+iYHSJdoZKUtRpfTlL1grDIX9NRlAVppljLw/4tTyYupIB7uIYmC3stW/imAv8EqaKaS/ibmeA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/template': 7.14.5
+      '@babel/traverse': 7.14.7
+      '@babel/types': 7.14.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1793,7 +1860,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.14.5
       '@babel/parser': 7.14.7
       '@babel/types': 7.14.5
-      debug: 4.3.1
+      debug: 4.3.2
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -1853,6 +1920,23 @@ packages:
       async-each: 1.0.3
       braces: 2.3.2
       glob-parent: 3.1.0
+      inherits: 2.0.4
+      is-binary-path: 1.0.1
+      is-glob: 4.0.1
+      normalize-path: 3.0.0
+      path-is-absolute: 1.0.1
+      readdirp: 2.2.1
+      upath: 1.2.0
+    dev: true
+    optional: true
+
+  /@nicolo-ribaudo/chokidar-2/2.1.8-no-fsevents.2:
+    resolution: {integrity: sha512-Fb8WxUFOBQVl+CX4MWet5o7eCc6Pj04rXIwVKZ6h1NnqTo45eOQW6aWyhG25NIODvWFwTDMwBsYxrQ3imxpetg==}
+    dependencies:
+      anymatch: 2.0.0
+      async-each: 1.0.3
+      braces: 2.3.2
+      glob-parent: 5.1.2
       inherits: 2.0.4
       is-binary-path: 1.0.1
       is-glob: 4.0.1
@@ -2153,7 +2237,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       normalize-path: 3.0.0
-      picomatch: 2.2.2
+      picomatch: 2.3.0
     dev: true
     optional: true
 
@@ -5012,12 +5096,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /picomatch/2.2.2:
-    resolution: {integrity: sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==}
-    engines: {node: '>=8.6'}
-    dev: true
-    optional: true
-
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
     engines: {node: '>=8.6'}
@@ -5246,7 +5324,7 @@ packages:
     resolution: {integrity: sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==}
     engines: {node: '>=8.10.0'}
     dependencies:
-      picomatch: 2.2.2
+      picomatch: 2.3.0
     dev: true
     optional: true
 
