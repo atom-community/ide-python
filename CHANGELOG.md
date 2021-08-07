@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/lgeiger/ide-python/compare/v1.9.4...v1.9.5) (2021-08-07)
+
+
+### Bug Fixes
+
+* config works with pylsp / pyls ([c6a873f](https://github.com/lgeiger/ide-python/commit/c6a873fb5219eb2f94da1a5530e277a0a01bb941))
+
 ## [1.9.4](https://github.com/lgeiger/ide-python/compare/v1.9.3...v1.9.4) (2021-07-17)
 
 
