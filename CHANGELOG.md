@@ -1,3 +1,11 @@
+## [1.9.6](https://github.com/lgeiger/ide-python/compare/v1.9.5...v1.9.6) (2021-08-10)
+
+
+### Bug Fixes
+
+* configs not working for the deprecated pyls ([8e29121](https://github.com/lgeiger/ide-python/commit/8e291211dc5930363d3ad146f8c05594f40a8211))
+* fallback to the other pyls if one doesn't exist ([902102b](https://github.com/lgeiger/ide-python/commit/902102bed3e675bb00007eec94ef7af5d6059d7c))
+
 ## [1.9.5](https://github.com/lgeiger/ide-python/compare/v1.9.4...v1.9.5) (2021-08-07)
 
 
