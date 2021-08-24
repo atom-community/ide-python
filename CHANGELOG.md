@@ -1,3 +1,10 @@
+## [1.9.7](https://github.com/lgeiger/ide-python/compare/v1.9.6...v1.9.7) (2021-08-24)
+
+
+### Bug Fixes
+
+* fix replacing $PIPENV_PATH in the python path ([5789f41](https://github.com/lgeiger/ide-python/commit/5789f417d4f7ce0c37c34945f96f6e2001731143))
+
 ## [1.9.6](https://github.com/lgeiger/ide-python/compare/v1.9.5...v1.9.6) (2021-08-10)
 
 
