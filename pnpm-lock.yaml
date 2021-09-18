@@ -7,7 +7,7 @@ importers:
       '@atom-ide-community/nuclide-commons': ^0.8.2
       '@atom-ide-community/nuclide-commons-atom': ^0.8.2
       '@atom-ide-community/nuclide-debugger-common': ^0.8.2
-      '@babel/cli': 7.15.4
+      '@babel/cli': 7.15.7
       '@babel/core': 7.15.5
       arch: 2.1.0
       atom-languageclient: ^1.14.1
@@ -73,7 +73,7 @@ importers:
       which: 2.0.2
       xml2js: 0.4.17
     devDependencies:
-      '@babel/cli': 7.15.4_@babel+core@7.15.5
+      '@babel/cli': 7.15.7_@babel+core@7.15.5
       '@babel/core': 7.15.5
       babel-preset-atomic: 4.2.0
       build-commit: 0.1.4
@@ -222,8 +222,8 @@ packages:
       chokidar: 3.5.1
     dev: true
 
-  /@babel/cli/7.15.4_@babel+core@7.15.5:
-    resolution: {integrity: sha512-9RhhQ7tgKRcSO/jI3rNLxalLSk30cHqeM8bb+nGOJTyYBDpkoXw/A9QHZ2SYjlslAt4tr90pZQGIEobwWHSIDw==}
+  /@babel/cli/7.15.7_@babel+core@7.15.5:
+    resolution: {integrity: sha512-YW5wOprO2LzMjoWZ5ZG6jfbY9JnkDxuHDwvnrThnuYtByorova/I0HNXJedrUfwuXFQfYOjcqDA4PU3qlZGZjg==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
@@ -238,7 +238,7 @@ packages:
       slash: 2.0.0
       source-map: 0.5.7
     optionalDependencies:
-      '@nicolo-ribaudo/chokidar-2': 2.1.8-no-fsevents.2
+      '@nicolo-ribaudo/chokidar-2': 2.1.8-no-fsevents.3
       chokidar: 3.5.1
     dev: true
 
@@ -2120,6 +2120,7 @@ packages:
 
   /@nicolo-ribaudo/chokidar-2/2.1.8-no-fsevents:
     resolution: {integrity: sha512-+nb9vWloHNNMFHjGofEam3wopE3m1yuambrrd/fnPc+lFOMB9ROTqQlche9ByFWNkdNqfSgR/kkQtQ8DzEWt2w==}
+    requiresBuild: true
     dependencies:
       anymatch: 2.0.0
       async-each: 1.0.3
@@ -2135,20 +2136,9 @@ packages:
     dev: true
     optional: true
 
-  /@nicolo-ribaudo/chokidar-2/2.1.8-no-fsevents.2:
-    resolution: {integrity: sha512-Fb8WxUFOBQVl+CX4MWet5o7eCc6Pj04rXIwVKZ6h1NnqTo45eOQW6aWyhG25NIODvWFwTDMwBsYxrQ3imxpetg==}
-    dependencies:
-      anymatch: 2.0.0
-      async-each: 1.0.3
-      braces: 2.3.2
-      glob-parent: 5.1.2
-      inherits: 2.0.4
-      is-binary-path: 1.0.1
-      is-glob: 4.0.1
-      normalize-path: 3.0.0
-      path-is-absolute: 1.0.1
-      readdirp: 2.2.1
-      upath: 1.2.0
+  /@nicolo-ribaudo/chokidar-2/2.1.8-no-fsevents.3:
+    resolution: {integrity: sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2988,6 +2978,7 @@ packages:
   /chokidar/3.5.1:
     resolution: {integrity: sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw==}
     engines: {node: '>= 8.10.0'}
+    requiresBuild: true
     dependencies:
       anymatch: 3.1.1
       braces: 3.0.2
@@ -4076,6 +4067,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
