@@ -7,7 +7,7 @@ importers:
       '@atom-ide-community/nuclide-commons': ^0.8.2
       '@atom-ide-community/nuclide-commons-atom': ^0.8.2
       '@atom-ide-community/nuclide-debugger-common': ^0.8.2
-      '@babel/cli': 7.16.7
+      '@babel/cli': 7.16.8
       '@babel/core': 7.16.7
       arch: 2.1.0
       atom-languageclient: ^1.14.1
@@ -73,7 +73,7 @@ importers:
       which: 2.0.2
       xml2js: 0.4.17
     devDependencies:
-      '@babel/cli': 7.16.7_@babel+core@7.16.7
+      '@babel/cli': 7.16.8_@babel+core@7.16.7
       '@babel/core': 7.16.7
       babel-preset-atomic: 4.2.0
       build-commit: 0.1.4
@@ -203,8 +203,8 @@ packages:
       uuid: 3.0.1
     dev: false
 
-  /@babel/cli/7.16.7_@babel+core@7.16.7:
-    resolution: {integrity: sha512-0iBF+G2Qml0y3mY5dirolyToLSR88a/KB6F2Gm8J/lOnyL8wbEOHak0DHF8gjc9XZGgTDGv/jYXNiapvsYyHTA==}
+  /@babel/cli/7.16.8_@babel+core@7.16.7:
+    resolution: {integrity: sha512-FTKBbxyk5TclXOGmwYyqelqP5IF6hMxaeJskd85jbR5jBfYlwqgwAbJwnixi1ZBbTqKfFuAA95mdmUFeSRwyJA==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
@@ -2256,7 +2256,7 @@ packages:
   /babel-preset-atomic/4.2.0:
     resolution: {integrity: sha512-H2L5gmwQPvSnFarTT2SaDCFjqWJsncbqR+sgRcCssj+2hO+JLGM1L8QzmVUZ+Oj+XT6R+xGCiMiszSXEcgVvWA==}
     dependencies:
-      '@babel/cli': 7.16.7_@babel+core@7.16.7
+      '@babel/cli': 7.16.8_@babel+core@7.16.7
       '@babel/core': 7.16.7
       '@babel/plugin-proposal-class-properties': 7.14.5_@babel+core@7.16.7
       '@babel/plugin-proposal-decorators': 7.14.5_@babel+core@7.16.7
