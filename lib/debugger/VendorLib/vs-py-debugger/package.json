@@ -1766,7 +1766,7 @@
         "@types/lodash": "^4.14.104",
         "@types/md5": "^2.1.32",
         "@types/mocha": "^9.0.0",
-        "@types/node": "17.0.29",
+        "@types/node": "17.0.30",
         "@types/promisify-node": "^0.4.0",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
