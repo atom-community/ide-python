@@ -1819,7 +1819,7 @@
         "istanbul": "^0.4.5",
         "jsdom": "^19.0.0",
         "json-loader": "^0.5.7",
-        "mocha": "^9.0.0",
+        "mocha": "^10.0.0",
         "mocha-junit-reporter": "^2.0.0",
         "node-has-native-dependencies": "^1.0.2",
         "prismjs": "^1.15.0",
