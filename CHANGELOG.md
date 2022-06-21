@@ -1,7 +1,7 @@
 
 # Changelog
 
-Check the **[Releases]** for the files.
+Check the **[Releases]** for the actual files.
 
 <br>
 <br>
