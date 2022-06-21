@@ -12,7 +12,7 @@ Check the **[Releases]** for the files.
 
 - Fixed replacing `$PIPENV_PATH` in python path
     
-  (  [5789f41]  )
+  [<kbd>  5789f41  </kbd>][5789f41]
 
 <br>
 <br>
@@ -23,11 +23,11 @@ Check the **[Releases]** for the files.
 
 - Configs not working for the deprecated `pyls` 
 
-  (  [8e29121]  )
+  [<kbd>  8e29121  </kbd>][8e29121]
 
 - Fallback to the other `pyls` if one doesn't exist 
 
-  (  [902102b]  )
+  [<kbd>  902102b  </kbd>][902102b]
 
 <br>
 <br>
@@ -38,7 +38,7 @@ Check the **[Releases]** for the files.
 
 * Config works with `pylsp` / `pyls`
 
-  (  [c6a873f]  )
+  [<kbd>  c6a873f  </kbd>][c6a873f]
 
 
 <br>
@@ -50,36 +50,36 @@ Check the **[Releases]** for the files.
 
 - Added `eslint` 
 
-  (  [c26448e]  )
+  [<kbd>  c26448e  </kbd>][c26448e]
 
 - Default to `python3` and fallback to `python` 
 
-  (  [2850374]  )
+  [<kbd>  2850374  </kbd>][2850374]
   
 - Lazy-load `log4js` 
 
-  (  [6e11dde]  )
+  [<kbd>  6e11dde  </kbd>][6e11dde]
   
 - Lazy-load `RemoteDebuggerCommandService` 
 
-  (  [c7fff17]  )
+  [<kbd>  c7fff17  </kbd>][c7fff17]
   
 - Merge activate methods
  
-  (  [e15d390]  )
+  [<kbd>  e15d390  </kbd>][e15d390]
 
 - Remove excess async 
 
-  (  [e52839f]  )
+  [<kbd>  e52839f  </kbd>][e52839f]
   
 - Update `atom-languageclient` 
     
-  (  [cf16a1e]  )
+  [<kbd>  cf16a1e  </kbd>][cf16a1e]
 
 - Use accurate type comparisons & <br>
   remove unused reject parameters
 
-  (  [dfe5b0d]  )
+  [<kbd>  dfe5b0d  </kbd>][dfe5b0d]
 
 <br>
 <br>
@@ -90,7 +90,7 @@ Check the **[Releases]** for the files.
 
 - Project detection
 
-  (  [#344]  |  [a811510]  )
+  [<kbd>  a811510  </kbd>][a811510]   [<kbd>  #344  </kbd>][#344]
 
 <br>
 <br>
@@ -101,9 +101,12 @@ Check the **[Releases]** for the files.
 
 - Made python a class attribute 
 
-  (  [#338]  |  [4d34da9]  )
+  [<kbd>  4d34da9  </kbd>][4d34da9]   [<kbd>  #338  </kbd>][#338]
 
-  Closes [#336], [#335] & [#337].
+  Closes:
+  - [<kbd>  #335  </kbd>][#335]
+  - [<kbd>  #336  </kbd>][#336]
+  - [<kbd>  #337  </kbd>][#337]
 
 <br>
 <br>
@@ -114,7 +117,7 @@ Check the **[Releases]** for the files.
 
 - Renamed `pyls-path` config to `pyls` for consistency
 
-  (  [1bb76b5]  )
+  [<kbd>  1bb76b5  </kbd>][1bb76b5]
 
 
 <br>
@@ -126,11 +129,11 @@ Check the **[Releases]** for the files.
 
 - Updated `react`
  
-  (  [62049b9]  )
+  [<kbd>  62049b9  </kbd>][62049b9]
   
 - Use `which` to detect `pylsp`
  
-  (  [a2c8444]  )
+  [<kbd>  a2c8444  </kbd>][a2c8444]
 
 
 <br>
@@ -139,27 +142,27 @@ Check the **[Releases]** for the files.
 
 - Default to `python-lsp-server` ( `pylsp` ) instead of `pyls`
 
-  (  [01dfc6c]  )
+  [<kbd>  01dfc6c  </kbd>][01dfc6c]
 
 - Install `atom-ide-base` by default
 
-  (  [7bd1e14]  )
+  [<kbd>  7bd1e14  </kbd>][7bd1e14]
 
 - Make the path to `pyls` executable configurable
     
-  (  [ad4d166]  )
+  [<kbd>  ad4d166  </kbd>][ad4d166]
 
 - Updated `atom-languageclient`
 
-  (  [cb1db60]  )
+  [<kbd>  cb1db60  </kbd>][cb1db60]
 
 - Update `atom-languageclient` + use `pylsp`
     
-  (  [#334]  |  [b56f580]  )
+  [<kbd>  b56f580  </kbd>][b56f580]   [<kbd>  #334  </kbd>][#334]
 
 - Use spawn capabilities of language client
 
-  (  [1cd5126]  )
+  [<kbd>  1cd5126  </kbd>][1cd5126]
 
 
 <br>
@@ -171,7 +174,7 @@ Check the **[Releases]** for the files.
 
 - Added support for `pyls-mypy`
 
-  (  [#232]  |  [fb48958]  )
+  [<kbd>  fb48958  </kbd>][fb48958]   [<kbd>  #232  </kbd>][#232]
 
 <br>
 <br>
@@ -182,7 +185,7 @@ Check the **[Releases]** for the files.
 
 - Updated language client
 
-  (  [#291]  |  [a52eadf]  )
+  [<kbd>  a52eadf  </kbd>][a52eadf]   [<kbd>  #291  </kbd>][#291]
 
 <br>
 <br>
@@ -193,7 +196,7 @@ Check the **[Releases]** for the files.
 
 - `atom-languageclient`  →  `^1.0.6`
 
-  (  [d078249]  )
+  [<kbd>  d078249  </kbd>][d078249]
 
 <br>
 <br>
@@ -205,7 +208,7 @@ Check the **[Releases]** for the files.
 - Revert `atom-languageclient` to fix auto <br>
   complete adds initial typing
   
-  (  [cf23b43]  )
+  [<kbd>  cf23b43  </kbd>][cf23b43]
 
 <br>
 <br>
@@ -216,7 +219,7 @@ Check the **[Releases]** for the files.
 
 - Bumped `atom-languageclient`
 
-  (  [9e34245]  )
+  [<kbd>  9e34245  </kbd>][9e34245]
 
 <br>
 
