@@ -12,7 +12,7 @@ Check the **[Releases]** for the files.
 
 - Fixed replacing `$PIPENV_PATH` in python path
     
-  ( [5789f41] )
+  (  [5789f41]  )
 
 <br>
 <br>
@@ -23,11 +23,11 @@ Check the **[Releases]** for the files.
 
 - Configs not working for the deprecated `pyls` 
 
-  ( [8e29121] )
+  (  [8e29121]  )
 
 - Fallback to the other `pyls` if one doesn't exist 
 
-  ( [902102b] )
+  (  [902102b]  )
 
 <br>
 <br>
@@ -38,7 +38,7 @@ Check the **[Releases]** for the files.
 
 * Config works with `pylsp` / `pyls`
 
-  ( [c6a873f] )
+  (  [c6a873f]  )
 
 
 <br>
@@ -50,36 +50,36 @@ Check the **[Releases]** for the files.
 
 - Added `eslint` 
 
-  ( [c26448e] )
+  (  [c26448e]  )
 
 - Default to `python3` and fallback to `python` 
 
-  ( [2850374] )
+  (  [2850374]  )
   
 - Lazy-load `log4js` 
 
-  ( [6e11dde] )
+  (  [6e11dde]  )
   
 - Lazy-load `RemoteDebuggerCommandService` 
 
-  ( [c7fff17] )
+  (  [c7fff17]  )
   
 - Merge activate methods
  
-  ( [e15d390] )
+  (  [e15d390]  )
 
 - Remove excess async 
 
-  ( [e52839f] )
+  (  [e52839f]  )
   
- - Update `atom-languageclient` 
+- Update `atom-languageclient` 
     
-  ( [cf16a1e] )
+  (  [cf16a1e]  )
 
 - Use accurate type comparisons & <br>
   remove unused reject parameters
 
-  ( [dfe5b0d] )
+  (  [dfe5b0d]  )
 
 <br>
 <br>
@@ -90,7 +90,7 @@ Check the **[Releases]** for the files.
 
 - Project detection
 
-  ( [#344] | [a811510] )
+  (  [#344]  |  [a811510]  )
 
 <br>
 <br>
@@ -101,7 +101,7 @@ Check the **[Releases]** for the files.
 
 - Made python a class attribute 
 
-  ( [#338] | [4d34da9] )
+  (  [#338]  |  [4d34da9]  )
 
   Closes [#336], [#335] & [#337].
 
@@ -114,7 +114,7 @@ Check the **[Releases]** for the files.
 
 - Renamed `pyls-path` config to `pyls` for consistency
 
-  ( [1bb76b5] )
+  (  [1bb76b5]  )
 
 
 <br>
@@ -126,11 +126,11 @@ Check the **[Releases]** for the files.
 
 - Updated `react`
  
-  ( [62049b9] )
+  (  [62049b9]  )
   
 - Use `which` to detect `pylsp`
  
-  ( [a2c8444] )
+  (  [a2c8444]  )
 
 
 <br>
@@ -139,27 +139,27 @@ Check the **[Releases]** for the files.
 
 - Default to `python-lsp-server` ( `pylsp` ) instead of `pyls`
 
-  ( [01dfc6c] )
+  (  [01dfc6c]  )
 
 - Install `atom-ide-base` by default
 
-  ( [7bd1e14] )
+  (  [7bd1e14]  )
 
 - Make the path to `pyls` executable configurable
     
-  ( [ad4d166] )
+  (  [ad4d166]  )
 
 - Updated `atom-languageclient`
 
-  ( [cb1db60] )
+  (  [cb1db60]  )
 
 - Update `atom-languageclient` + use `pylsp`
     
-  ( [#334] | [b56f580] )
+  (  [#334]  |  [b56f580]  )
 
 - Use spawn capabilities of language client
 
-  ( [1cd5126] )
+  (  [1cd5126]  )
 
 
 <br>
@@ -171,7 +171,7 @@ Check the **[Releases]** for the files.
 
 - Added support for `pyls-mypy`
 
-  ( [#232] | [fb48958] )
+  (  [#232]  |  [fb48958]  )
 
 <br>
 <br>
@@ -182,7 +182,7 @@ Check the **[Releases]** for the files.
 
 - Updated language client
 
-  ( [#291] | [a52eadf] )
+  (  [#291]  |  [a52eadf]  )
 
 <br>
 <br>
@@ -193,7 +193,7 @@ Check the **[Releases]** for the files.
 
 - `atom-languageclient`  →  `^1.0.6`
 
-  ( [d078249] )
+  (  [d078249]  )
 
 <br>
 <br>
@@ -205,7 +205,7 @@ Check the **[Releases]** for the files.
 - Revert `atom-languageclient` to fix auto <br>
   complete adds initial typing
   
-  ( [cf23b43] )
+  (  [cf23b43]  )
 
 <br>
 <br>
@@ -216,7 +216,7 @@ Check the **[Releases]** for the files.
 
 - Bumped `atom-languageclient`
 
-  ( [9e34245] )
+  (  [9e34245]  )
 
 <br>
 
