@@ -1762,7 +1762,7 @@
         "@types/glob": "^7.0.0",
         "@types/iconv-lite": "^0.0.1",
         "@types/istanbul": "^0.4.29",
-        "@types/jsdom": "^16.0.0",
+        "@types/jsdom": "^20.0.0",
         "@types/lodash": "^4.14.104",
         "@types/md5": "^2.1.32",
         "@types/mocha": "^9.0.0",
