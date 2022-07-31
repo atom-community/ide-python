@@ -74,9 +74,9 @@
     "xml2js": "0.4.17"
   },
   "devDependencies": {
-    "@babel/cli": "7.17.10",
-    "@babel/core": "7.18.5",
-    "babel-preset-atomic": "^4.2.0",
+    "@babel/cli": "7.18.9",
+    "@babel/core": "7.18.9",
+    "babel-preset-atomic": "^5.0.0",
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
     "eslint-config-atomic": "^1.16.2",
