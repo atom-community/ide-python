@@ -74,8 +74,8 @@
     "xml2js": "0.4.17"
   },
   "devDependencies": {
-    "@babel/cli": "7.18.9",
-    "@babel/core": "7.18.9",
+    "@babel/cli": "7.18.10",
+    "@babel/core": "7.18.10",
     "babel-preset-atomic": "^5.0.0",
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
