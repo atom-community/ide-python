@@ -75,7 +75,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
-    "@babel/core": "7.19.6",
+    "@babel/core": "7.20.2",
     "babel-preset-atomic": "^5.0.0",
     "build-commit": "0.1.4",
     "cross-env": "^7.0.3",
